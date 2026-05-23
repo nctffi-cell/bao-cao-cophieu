@@ -1,177 +1,70 @@
 <!DOCTYPE html>
-<!-- MWG vs ĐMX — TRANG SO SÁNH ĐẦU TƯ (Tier 1) — Trung Tâm KD HCM02, OCBS — 23/05/2026
-     Quyết định 12 tháng: holding MWG vs IPO Điện Máy Xanh · A4 print-ready.
--->
 <html lang="vi">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>MWG vs ĐMX · So sánh đầu tư 12 tháng · 23/05/2026</title>
-<link rel="icon" type="image/svg+xml" href="https://ocbs.com.vn/images/icon-gold.svg"/>
-<link rel="alternate icon" type="image/png" href="https://ocbs.com.vn/images/logo.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo phân tích — MWG (Thế Giới Di Động)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#FAFAF7;--page:#FFFFFF;--ink:#111815;--muted:#606A64;--green:#008C44;--green-dark:#005F35;--orange:#E4A025;--orange-light:#F5B843;--orange-dark:#A9740F;--red:#B9453B;--grey:#95A5A6;--line:#E1E8E2;--soft:#EEF2EE;--green-soft:#F1F8F4;--green-line:#D8ECDC;--orange-soft:#FFF6E5;--orange-line:#F3DFB7;--red-soft:#FFF4F2;--red-line:#F1D6D2}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5;font-variant-numeric:tabular-nums;padding:24px 12px;-webkit-font-smoothing:antialiased}
-.page{max-width:880px;margin:0 auto;background:var(--page);padding:32px 40px 24px;border-radius:16px;box-shadow:0 24px 70px -46px var(--muted)}
-.header{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:22px;gap:18px}.brand-left{display:flex;align-items:center;gap:13px}.ocbs-logo{height:44px;width:auto;display:block;flex-shrink:0}.brand-name{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--green);text-transform:uppercase}.brand-team{font-size:11px;color:var(--muted);font-style:italic;margin-top:3px}.header-meta{display:flex;flex-direction:column;align-items:flex-end;gap:5px}.tier-badge{display:inline-flex;padding:6px 11px;background:var(--green-soft);color:var(--green-dark);border:1px solid var(--green-line);border-radius:999px;font-size:9px;font-weight:800;letter-spacing:1.4px}.date-pub{font-size:10px;color:var(--muted);font-weight:600}
-
-/* ---- Title strip ---- */
-.title-strip{margin-bottom:20px}.report-kicker{font-size:10px;font-weight:800;letter-spacing:2.5px;color:var(--orange-dark);text-transform:uppercase}.report-title{font-family:"Playfair Display",Georgia,serif;font-size:32px;font-weight:900;line-height:1.08;margin-top:6px;color:var(--ink)}.report-sub{font-size:12px;color:var(--muted);font-weight:600;margin-top:7px}
-
-/* ---- Versus hero ---- */
-.versus{display:grid;grid-template-columns:1fr 56px 1fr;align-items:stretch;gap:0;margin-bottom:18px}
-.vs-card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
-.vs-card.mwg{border-top:3px solid var(--green);background:linear-gradient(160deg,var(--page),var(--green-soft))}
-.vs-card.dmx{border-top:3px solid var(--orange);background:linear-gradient(160deg,var(--page),var(--orange-soft))}
-.vs-tag{font-size:8px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;align-self:flex-start;padding:3px 8px;border-radius:100px}
-.mwg .vs-tag{color:var(--green-dark);background:var(--green-soft);border:1px solid var(--green-line)}
-.dmx .vs-tag{color:var(--orange-dark);background:var(--orange-soft);border:1px solid var(--orange-line)}
-.vs-name-row{display:flex;align-items:center;gap:12px}
-.vs-ticker{font-size:36px;font-weight:800;line-height:1;letter-spacing:.5px}
-.mwg .vs-ticker{color:var(--green-dark)}.dmx .vs-ticker{color:var(--orange-dark)}
-.vs-logo{height:34px;width:auto;max-width:130px;object-fit:contain}
-.vs-wordmark{font-size:13px;font-weight:800;color:var(--orange-dark);line-height:1.15;letter-spacing:.2px}
-.vs-company{font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.3px}
-.vs-price{font-size:13px;font-weight:800;margin-top:2px}.vs-price .small{font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;display:block}
-.vs-mid{display:flex;align-items:center;justify-content:center}.vs-orb{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:900;color:var(--muted);background:var(--page);border:1px solid var(--line);border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center}
-
-/* ---- Verdict banner ---- */
-.verdict{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--green-dark);color:#fff;border-radius:14px;padding:16px 22px;margin-bottom:20px}
-.verdict-badge{font-family:"Playfair Display",Georgia,serif;font-size:30px;font-weight:900;line-height:1;color:var(--orange-light);white-space:nowrap}
-.verdict-txt{font-size:13px;line-height:1.5;font-weight:600;color:#EAF3EC}.verdict-txt strong{color:#fff;font-weight:800}.verdict-txt .hl{color:var(--orange-light);font-weight:800}
-
-/* ---- Comparison table ---- */
-.section-mini-title{font-size:10px;font-weight:800;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}.section-mini-title::before{content:"";width:24px;height:2px;background:var(--green)}
-.cmp{width:100%;border-collapse:separate;border-spacing:0;margin-bottom:20px;font-size:11.5px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.cmp th,.cmp td{padding:9px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-.cmp thead th{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding-top:11px;padding-bottom:11px}
-.cmp thead .h-crit{color:var(--muted);background:var(--soft)}
-.cmp thead .h-mwg{color:var(--green-dark);background:var(--green-soft);border-left:1px solid var(--green-line)}
-.cmp thead .h-dmx{color:var(--orange-dark);background:var(--orange-soft);border-left:1px solid var(--orange-line)}
-.cmp td.c-crit{font-weight:800;color:var(--ink);background:color-mix(in srgb,var(--soft) 55%,transparent);width:24%}
-.cmp td.c-mwg{border-left:1px solid var(--green-line);width:38%}
-.cmp td.c-dmx{border-left:1px solid var(--orange-line);width:38%}
-.cmp tr:last-child td{border-bottom:none}
-.cmp b{font-weight:800;color:var(--ink)}.cmp .pos{color:var(--green-dark);font-weight:800}.cmp .neu{color:var(--muted)}.cmp .win{display:inline-block;margin-left:5px;font-size:8px;font-weight:800;color:var(--green);vertical-align:middle}.cmp .win-d{color:var(--orange-dark)}
-
-/* ---- Insight panel ---- */
-.insight{background:var(--green-soft);border:1px solid var(--green-line);border-left:3px solid var(--green);border-radius:0 12px 12px 0;padding:15px 18px;margin-bottom:20px;font-size:13px;font-weight:600;line-height:1.55}.insight em{font-style:normal;font-weight:800;color:var(--green-dark)}.insight .ttl{display:block;font-size:9px;letter-spacing:1.6px;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:6px}
-
-/* ---- Return + scenario two-col ---- */
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
-.panel{border:1px solid var(--line);border-radius:12px;padding:15px 16px}
-.ret-row{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:8px;padding:7px 0}.ret-row+.ret-row{border-top:1px solid var(--soft)}.ret-k{font-size:11px;font-weight:700;color:var(--muted)}.ret-k b{color:var(--ink);font-weight:800}.ret-v{font-size:18px;font-weight:800}.ret-v.g{color:var(--green-dark)}.ret-v.o{color:var(--orange-dark)}.ret-note{font-size:9.5px;color:var(--muted);font-weight:600;margin-top:8px;line-height:1.4}
-.scn{width:100%;border-collapse:collapse;font-size:10.5px}.scn td{padding:6px 4px;border-bottom:1px solid var(--soft);vertical-align:top}.scn tr:last-child td{border-bottom:none}.scn .s1{font-weight:800;color:var(--ink)}.scn .s2{font-weight:800;text-align:right;white-space:nowrap}.scn .s2.g{color:var(--green-dark)}.scn .s2.o{color:var(--orange-dark)}.scn .s2.r{color:var(--red)}.scn .s3{color:var(--muted);font-weight:600}
-
-/* ---- Choose dual ---- */
-.dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}.dual-box{border-radius:10px;padding:14px 15px;border:1px solid var(--line)}.dual-box.now{background:var(--green-soft);border-color:var(--green-line)}.dual-box.pause{background:var(--orange-soft);border-color:var(--orange-line)}.dual-title{font-size:10px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;margin-bottom:8px}.now .dual-title{color:var(--green-dark)}.pause .dual-title{color:var(--orange-dark)}.dual-list{list-style:none}.dual-list li{font-size:11px;line-height:1.45;padding:5px 0 5px 15px;position:relative;color:var(--muted)}.dual-list li+li{border-top:1px solid var(--soft)}.dual-list li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%}.now li::before{background:var(--green)}.pause li::before{background:var(--orange)}.dual-list strong{color:var(--ink);font-weight:800}
-
-/* ---- Footer ---- */
-.footer{display:grid;grid-template-columns:1fr auto;align-items:end;gap:20px;padding-top:14px;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}.read-more{display:inline-flex;justify-self:start;padding:8px 12px;background:var(--green-soft);color:var(--green-dark);border:1px solid var(--green-line);border-left:3px solid var(--green);border-radius:4px;text-decoration:none;font-weight:800}.read-more+.read-more{margin-left:8px}.footer-links{display:flex;flex-wrap:wrap;gap:0}.footer-contact{text-align:right;line-height:1.45}.contact-main{display:flex;justify-content:flex-end;align-items:baseline;gap:8px;color:var(--ink);font-weight:800}.contact-main .phone-line{color:var(--ink);font-size:10px}.contact-meta{margin-top:3px;color:var(--muted);font-weight:600}.disclaimer-mini{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:8px;color:var(--muted);line-height:1.45;text-align:left}
-
-@media (max-width:720px){body{padding:12px 6px;overflow-x:hidden}.page{width:100%;max-width:100%;padding:22px 18px 18px;border-radius:12px;overflow:hidden}.header{margin-bottom:18px;flex-wrap:wrap;align-items:flex-start}.header-meta{align-items:flex-start}.report-title{font-size:25px}.versus{grid-template-columns:1fr;gap:10px}.vs-mid{display:none}.verdict{grid-template-columns:1fr;gap:8px;text-align:left}.verdict-badge{font-size:25px}.cmp{font-size:10.5px}.cmp th,.cmp td{padding:8px 9px}.cmp td.c-crit{width:26%}.two-col{grid-template-columns:1fr;gap:12px}.dual-grid{grid-template-columns:1fr;gap:10px}.footer{grid-template-columns:1fr;align-items:start;gap:10px}.footer-contact{text-align:left}.contact-main{justify-content:flex-start;flex-wrap:wrap}.ocbs-logo{height:38px}}
-@media print{@page{size:A4 portrait;margin:9mm}body{background:var(--page);padding:0}.page{box-shadow:none;border-radius:0;padding:0;max-width:none}.read-more{color:var(--green)!important;box-shadow:none;text-decoration:none}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  :root{ --paper:#FAFAF7; --green:#008C44; --gold:#E4A025; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e6df; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Inter',system-ui,sans-serif; background:var(--paper); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:880px; margin:0 auto; padding:0 24px; }
+  header{ padding:64px 0 40px; border-bottom:1px solid var(--line); }
+  .badge{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--green); background:rgba(0,140,68,.08); padding:6px 14px; border-radius:20px; margin-bottom:20px; }
+  h1{ font-family:'Playfair Display',serif; font-size:42px; font-weight:700; line-height:1.15; margin-bottom:12px; }
+  h1 .sub{ display:block; font-family:'Inter',sans-serif; font-size:17px; font-weight:400; color:var(--muted); margin-top:10px; }
+  .grid{ display:grid; gap:18px; padding:44px 0 24px; }
+  .card{ display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px 28px; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+  .card:hover{ transform:translateY(-3px); box-shadow:0 12px 30px rgba(0,0,0,.07); border-color:var(--green); }
+  .card .tag{ font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+  .card h2{ font-family:'Playfair Display',serif; font-size:23px; font-weight:600; margin-bottom:6px; }
+  .card p{ color:var(--muted); font-size:15px; }
+  .card .go{ display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:14px; font-weight:600; color:var(--green); }
+  footer{ padding:30px 0 60px; border-top:1px solid var(--line); margin-top:24px; color:var(--muted); font-size:13px; }
+  footer .disc{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; margin-top:14px; font-size:12.5px; line-height:1.55; }
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="header">
-    <div class="brand-left"><img class="ocbs-logo" src="https://ocbs.com.vn/images/logo.png" alt="OCBS — Trung Tâm KD HCM02"/><div class="brand-text"><div class="brand-name">Trung Tâm KD HCM02</div><div class="brand-team">Dẫn lối thịnh vượng bền vững</div></div></div>
-    <div class="header-meta"><div class="tier-badge">★ VVIP · SO SÁNH ĐẦU TƯ</div><div class="date-pub">Phát hành 23/05/2026</div></div>
-  </div>
+<div class="wrap">
+  <header>
+    <span class="badge">OCBS Research · Phân tích cơ bản</span>
+    <h1>MWG — CTCP Đầu tư Thế Giới Di Động
+      <span class="sub">Bộ báo cáo phân tích cập nhật tháng 5/2026</span>
+    </h1>
+  </header>
 
-  <div class="title-strip">
-    <div class="report-kicker">Quyết định 12 tháng · Bán lẻ ICT–Điện máy</div>
-    <h1 class="report-title">MWG hay Điện Máy Xanh?</h1>
-    <div class="report-sub">Holding đang niêm yết so với "viên ngọc" cốt lõi sắp IPO — chọn cổ phiếu nào cho 12 tháng tới.</div>
-  </div>
+  <main class="grid">
+    <a class="card" href="vvip/">
+      <div class="tag">★ VVIP · Báo cáo đầy đủ</div>
+      <h2>Phân tích chuyên sâu MWG</h2>
+      <p>Luận điểm đầu tư, định giá đa phương pháp, KPI vận hành, rủi ro và khuyến nghị tỷ trọng — bản trình bày cinematic.</p>
+      <span class="go">Mở báo cáo →</span>
+    </a>
 
-  <div class="versus">
-    <div class="vs-card mwg">
-      <span class="vs-tag">Đang niêm yết · HOSE</span>
-      <div class="vs-name-row"><span class="vs-ticker">MWG</span><img class="vs-logo" src="https://congtyquatang.com.vn/wp-content/uploads/2026/03/logo-mwg-vector-01.webp" alt="MWG logo"/></div>
-      <div class="vs-company">CTCP Đầu tư Thế Giới Di Động</div>
-      <div class="vs-price">79.400 đ<span class="small">Giá đóng cửa 22/05/2026</span></div>
+    <a class="card" href="so-sanh-dmx/">
+      <div class="tag">So sánh chuyên đề</div>
+      <h2>MWG vs. Điện Máy Xanh (DMX)</h2>
+      <p>Đối chiếu hiệu quả vận hành, biên lợi nhuận và đóng góp doanh thu giữa tập đoàn và chuỗi Điện Máy Xanh.</p>
+      <span class="go">Mở báo cáo →</span>
+    </a>
+
+    <a class="card" href="onepager/">
+      <div class="tag">One-Pager · Đọc nhanh</div>
+      <h2>Tóm tắt 1 trang MWG</h2>
+      <p>Bản cô đọng cho lãnh đạo — đọc trong 60–90 giây để nắm luận điểm và khuyến nghị cốt lõi.</p>
+      <span class="go">Mở báo cáo →</span>
+    </a>
+  </main>
+
+  <footer>
+    <div>© 2026 OCBS Research. Cập nhật: 23/05/2026.</div>
+    <div class="disc">
+      <strong>Khuyến nghị miễn trừ trách nhiệm:</strong> Nội dung chỉ mang tính tham khảo, không phải khuyến nghị mua/bán.
+      Nhà đầu tư tự chịu trách nhiệm với quyết định của mình. Dữ liệu tổng hợp từ BCTC, ĐHĐCĐ &amp; CBTT, CafeF, sstock và báo cáo các CTCK.
     </div>
-    <div class="vs-mid"><div class="vs-orb">vs</div></div>
-    <div class="vs-card dmx">
-      <span class="vs-tag">Sắp IPO · niêm yết ~T8/2026</span>
-      <div class="vs-name-row"><span class="vs-ticker">DMX</span><img class="vs-logo" src="https://images.urbox.vn/_img_server/2025/03/19/640/1742374793_67da878a0f466.png" alt="Điện Máy Xanh logo"/></div>
-      <div class="vs-company">Công ty con cốt lõi của MWG (~85%)</div>
-      <div class="vs-price">80.000 đ<span class="small">Giá chào bán dự kiến</span></div>
-    </div>
-  </div>
-
-  <div class="verdict">
-    <div class="verdict-badge">Ưu tiên MWG</div>
-    <div class="verdict-txt">Cho chân trời <strong>12 tháng</strong>: <strong>MWG</strong> cho rủi ro–lợi nhuận cân đối hơn — tổng lợi nhuận kỳ vọng <span class="hl">+26,5%</span> (đã gồm cổ tức), mua ở mức <span class="hl">thấp hơn giá trị từng phần</span> mà chính IPO ĐMX định giá. <strong>ĐMX</strong> chỉ vượt trội nếu bạn ưu tiên cổ tức <span class="hl">~5%</span> + cược pure-play và lấy được suất IPO.</div>
-  </div>
-
-  <div class="section-mini-title">Đối chiếu trực tiếp</div>
-  <table class="cmp">
-    <thead><tr><th class="h-crit">Tiêu chí</th><th class="h-mwg">MWG · đang niêm yết</th><th class="h-dmx">ĐMX · sắp IPO</th></tr></thead>
-    <tbody>
-      <tr><td class="c-crit">Trạng thái</td><td class="c-mwg">Niêm yết HOSE, mua/bán ngay</td><td class="c-dmx">Đăng ký mua <b>27/05 → 17/06</b>, niêm yết ~đầu T8/2026</td></tr>
-      <tr><td class="c-crit">Giá</td><td class="c-mwg"><b>79.400 đ</b> (giao dịch tự do)</td><td class="c-dmx"><b>80.000 đ</b> (chào bán dự kiến)</td></tr>
-      <tr><td class="c-crit">Định giá</td><td class="c-mwg">P/E TTM <b>14,2×</b> · P/B <b>3,31×</b> <span class="win">P/B rẻ hơn</span></td><td class="c-dmx">P/E 2026F <b>~10×</b> · P/B <b>~4,95×</b> <span class="win win-d">P/E rẻ hơn</span></td></tr>
-      <tr><td class="c-crit">Vốn hóa</td><td class="c-mwg"><b>116.740 tỷ</b></td><td class="c-dmx">~<b>102.460 tỷ</b> (179,5tr CP)</td></tr>
-      <tr><td class="c-crit">Cổ tức</td><td class="c-mwg">2.000 đ/cp · lợi suất <b>~2,5%</b> (chia Q3+Q4/2026)</td><td class="c-dmx">Lợi suất dự kiến <b class="pos">~5%</b> tại giá 80k <span class="win win-d">cao hơn</span></td></tr>
-      <tr><td class="c-crit">Tăng giá kỳ vọng 12T</td><td class="c-mwg"><b class="pos">+24,0%</b> → giá hợp lý 98.400 đ</td><td class="c-dmx"><span class="neu">Chưa định lượng độc lập (chưa có giá thị trường)</span></td></tr>
-      <tr><td class="c-crit">Tổng lợi nhuận ước tính</td><td class="c-mwg"><b class="pos">~+26,5%</b> (định lượng được) <span class="win">rõ ràng</span></td><td class="c-dmx">~5% cổ tức + tăng giá <span class="neu">ẩn số</span></td></tr>
-      <tr><td class="c-crit">Thanh khoản</td><td class="c-mwg"><b>Rất cao</b> (~6 triệu CP/phiên) <span class="win">linh hoạt</span></td><td class="c-dmx"><span class="neu">Chưa có; vốn "kẹt" đến khi lên sàn</span></td></tr>
-      <tr><td class="c-crit">Bản chất</td><td class="c-mwg">Holding: ICT-CE + BHX + tiền ròng <b>+18.284 tỷ</b></td><td class="c-dmx">Pure-play ICT-CE thuần (TGDĐ + ĐMX)</td></tr>
-      <tr><td class="c-crit">Xúc tác riêng</td><td class="c-mwg">IPO ĐMX mở khóa định giá từng phần (SOTP)</td><td class="c-dmx">Ứng viên vào rổ <b>VN30</b> sau 6 tháng niêm yết</td></tr>
-    </tbody>
-  </table>
-
-  <div class="insight">
-    <span class="ttl">Mấu chốt — vì sao MWG có biên an toàn</span>
-    Chính việc ĐMX IPO ở mức <em>~102.460 tỷ</em> tạo giá neo thị trường cho mảng cốt lõi, kéo định giá từng phần (SOTP) của MWG lên <em>97.200 đ</em> — gần sát giá hợp lý <em>98.400 đ</em>. Nhưng MWG đang giao dịch <em>79.400 đ</em>: tức <em>rẻ hơn tổng giá trị từng phần</em> gồm cả giá trị IPO ĐMX. Mua MWG = sở hữu <em>85% ĐMX</em> + Bách Hóa Xanh + tiền ròng <em>18.284 tỷ</em> ở mức chiết khấu tập đoàn <em>~12%</em>. Ở kịch bản tích cực — IPO ĐMX thành công quanh giá dự kiến + biên gộp tiếp tục mở rộng — MWG có thể tiến tới giá mục tiêu <em>120.200 đ</em> (<em>+51,4%</em>).
-  </div>
-
-  <div class="two-col">
-    <div class="panel">
-      <div class="section-mini-title">Tổng lợi nhuận 12 tháng</div>
-      <div class="ret-row"><span class="ret-k"><b>MWG</b> · tăng giá +24,0% + cổ tức ~2,5%</span><span class="ret-v g">+26,5%</span></div>
-      <div class="ret-row"><span class="ret-k"><b>ĐMX</b> · cổ tức ~5,0% + tăng giá</span><span class="ret-v o">5% + ?</span></div>
-      <div class="ret-note">MWG định lượng được cả hai cấu phần. ĐMX dẫn về lợi suất cổ tức nhưng phần tăng giá là ẩn số do chưa có lịch sử giao dịch — lý do MWG trả cổ tức thấp hơn là vì giữ lại tiền tái đầu tư BHX & mở rộng.</div>
-    </div>
-    <div class="panel">
-      <div class="section-mini-title">Giá IPO ĐMX → SOTP của MWG</div>
-      <table class="scn">
-        <tr><td class="s1">IPO 80.000 đ (dự kiến)</td><td class="s2 g">97.200 đ</td></tr>
-        <tr><td class="s3" colspan="2">Mở khóa đầy đủ, sát giá hợp lý 98.400 đ.</td></tr>
-        <tr><td class="s1">IPO 60.000 đ (cầu yếu)</td><td class="s2 o">~82.500 đ</td></tr>
-        <tr><td class="s3" colspan="2">Vẫn trên sàn cứng EV/EBITDA — biên an toàn còn nguyên.</td></tr>
-        <tr><td class="s1">Sàn EV/EBITDA giữa chu kỳ</td><td class="s2 r">65.800 đ</td></tr>
-        <tr><td class="s3" colspan="2">Mức "đáy định giá" san phẳng đỉnh lợi nhuận.</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="section-mini-title">Nên chọn mã nào — theo mục tiêu của bạn</div>
-  <div class="dual-grid">
-    <div class="dual-box now"><div class="dual-title">▲ Chọn MWG nếu</div><ul class="dual-list">
-      <li><strong>Tổng lợi nhuận có biên an toàn</strong> · +26,5% gồm cổ tức, mua dưới SOTP.</li>
-      <li><strong>Cần thanh khoản</strong> · mua/bán ngay, ADTV ~6 triệu CP/phiên.</li>
-      <li><strong>Muốn quyền chọn miễn phí</strong> · kèm BHX + tiền ròng 18.284 tỷ đệm rủi ro.</li>
-    </ul></div>
-    <div class="dual-box pause"><div class="dual-title">▲ Chọn ĐMX nếu</div><ul class="dual-list">
-      <li><strong>Ưu tiên cổ tức</strong> · lợi suất dự kiến ~5%, gấp đôi MWG.</li>
-      <li><strong>Muốn cược pure-play</strong> · ICT-CE thuần, không pha loãng bởi BHX.</li>
-      <li><strong>Tin sóng VN30</strong> · lấy được suất IPO + chịu được biến động đầu sàn.</li>
-    </ul></div>
-  </div>
-
-  <div class="footer">
-    <div class="footer-links"><a href="MWG_VVIP_20260522.html" class="read-more">Dossier MWG đầy đủ</a><a href="MWG_VVIP_OnePager_20260522.html" class="read-more">One-pager MWG</a></div>
-    <div class="footer-contact"><div class="contact-main"><strong>TT KD HCM02, OCBS</strong><span class="phone-line">0935.350.356</span></div><div class="contact-meta">The Hallmark, TP.HCM · ocbs.com.vn · sieucophieu.vn</div></div>
-  </div>
-  <div class="disclaimer-mini">Quan điểm độc lập của Trung Tâm Kinh Doanh HCM02, OCBS; không đại diện Phòng Phân tích chính thức. Định giá MWG nguồn nội bộ (data/MWG_valuation.json, SOTP neo giá IPO); số liệu ĐMX theo hồ sơ IPO được UBCKNN chấp thuận 22/05/2026 + dự phóng Vietcap (P/E 2026F ~10×, lợi suất cổ tức ~5%). Giá chào bán 80.000 đ là dự kiến, chưa chốt cuối. Tài liệu chỉ mang tính tham khảo, không phải khuyến nghị mua/bán. © 2026 OCBS.</div>
+  </footer>
 </div>
 </body>
 </html>

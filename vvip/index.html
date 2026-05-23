@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trung Tâm KD HCM02 · MWG · Báo cáo VVIP 05/2026</title>
+<meta content="Báo cáo cập nhật MWG do Trung tâm Kinh doanh HCM 02 thuộc OCBS biên soạn dành cho khách hàng: luận điểm đầu tư, định giá đa lăng kính, xúc tác, rủi ro và kế hoạch giải ngân." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,800;1,400;1,600&amp;family=Playfair+Display:wght@900&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --green:#008C44;
+  --green-900:#004B2C;
+  --green-800:#006633;
+  --green-100:#E8F5EE;
+  --gold:#E4A025;
+  --gold-100:#FFF4DA;
+  --paper:#FAFAF7;
+  --paper-2:#F2F4EF;
+  --white:#FFFFFF;
+  --ink:#161616;
+  --muted:#5F6460;
+  --soft:#A3AAA4;
+  --line:rgba(22,22,22,.10);
+  --line-strong:rgba(22,22,22,.18);
+  --red:#B84B43;
+  --red-100:#FCEDEC;
+  --shadow:0 14px 42px rgba(0,0,0,.07);
+  --shadow-soft:0 8px 24px rgba(0,0,0,.05);
+  --radius:24px;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  font-variant-numeric:tabular-nums;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--green),var(--gold));z-index:2000}
+.topbar{
+  position:sticky;top:0;z-index:1500;
+  background:rgba(250,250,247,.90);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:var(--max);margin:0 auto;height:74px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:0 24px;
+}
+.brand{display:flex;align-items:center;gap:16px;min-width:0}
+.brand img{height:34px;width:auto;display:block}
+.brand-copy{display:flex;flex-direction:column;min-width:0}
+.brand-copy strong{font-size:13px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.brand-copy span{font-size:12px;color:var(--muted);white-space:nowrap}
+.top-actions{display:flex;align-items:center;gap:8px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:1px solid var(--line);
+  background:var(--white);
+  min-height:38px;padding:0 14px;border-radius:999px;
+  font-size:12px;font-weight:800;letter-spacing:.02em;
+  box-shadow:0 1px 0 rgba(0,0,0,.03);
+}
+.btn.primary{background:var(--green);color:white;border-color:var(--green)}
+.btn.gold{background:var(--gold-100);color:#7A4C00;border-color:rgba(228,160,37,.25)}
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(800px 380px at 82% 20%, rgba(228,160,37,.13), transparent 60%),
+    radial-gradient(700px 380px at 18% 10%, rgba(0,140,68,.11), transparent 58%),
+    linear-gradient(180deg,#FFFFFF 0%, var(--paper) 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(0,140,68,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,140,68,.035) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:linear-gradient(180deg,black 0%,transparent 85%);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;max-width:var(--max);margin:0 auto;
+  padding:72px 24px 54px;
+  display:grid;grid-template-columns:minmax(0,1fr) 440px;gap:42px;align-items:center;
+}
+.particles{position:absolute;inset:0;pointer-events:none;z-index:0}
+.particle{position:absolute;width:3px;height:3px;border-radius:50%;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);filter:blur(.5px);animation:float linear infinite}
+.particle.warm{background:radial-gradient(circle,var(--green) 0%,transparent 70%)}
+@keyframes float{0%{transform:translate(0,100vh) scale(0);opacity:0}10%{opacity:1;transform:translate(0,90vh) scale(1)}50%{opacity:.7}90%{opacity:.4}100%{transform:translate(var(--drift,30px),-10vh) scale(.3);opacity:0}}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);
+  margin-bottom:18px;
+}
+.kicker::before{content:"";width:32px;height:2px;background:var(--green);border-radius:2px}
+.hero h1{
+  margin:0 0 16px;
+  font-family:'Playfair Display',serif;font-weight:900;
+  font-size:clamp(42px,6.2vw,82px);
+  line-height:.96;letter-spacing:-.03em;
+  max-width:760px;
+}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero-lead{
+  font-size:clamp(17px,2.1vw,22px);
+  line-height:1.48;color:var(--muted);
+  margin:0 0 26px;max-width:760px;
+}
+.hero-lead strong{color:var(--ink)}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.tag{
+  display:inline-flex;align-items:center;border:1px solid var(--line);
+  border-radius:999px;background:rgba(255,255,255,.72);
+  padding:8px 12px;font-size:12px;font-weight:800;color:var(--muted);
+}
+.tag.green{color:var(--green);background:var(--green-100);border-color:rgba(0,140,68,.18)}
+.tag.gold{color:#7A4C00;background:var(--gold-100);border-color:rgba(228,160,37,.28)}
+.hero-note{
+  display:flex;gap:14px;align-items:flex-start;
+  max-width:720px;background:rgba(255,255,255,.76);
+  border:1px solid var(--line);border-radius:18px;padding:16px 18px;
+  box-shadow:var(--shadow-soft);
+}
+.hero-note b{
+  color:var(--gold);font-size:20px;line-height:1;margin-top:2px;
+}
+.hero-note p{margin:0;font-size:14px;color:var(--muted)}
+.hero-note strong{color:var(--ink)}
+.cockpit{
+  background:linear-gradient(180deg,#123C2B 0%,#052016 100%);
+  color:white;border-radius:32px;padding:26px;
+  box-shadow:0 26px 70px rgba(0,75,44,.28);
+  border:1px solid rgba(255,255,255,.12);
+  position:relative;overflow:hidden;
+}
+.cockpit::before{
+  content:"";position:absolute;inset:auto -100px -130px auto;width:260px;height:260px;border-radius:50%;
+  background:rgba(228,160,37,.20);filter:blur(20px);
+}
+.cockpit-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:26px;position:relative}
+.cockpit-title{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:rgba(255,255,255,.65);font-weight:800}
+.reco{
+  display:inline-flex;align-items:center;background:var(--gold);color:#2A1B00;
+  padding:8px 12px;border-radius:999px;font-family:'Playfair Display',serif;font-weight:900;font-size:13px;letter-spacing:.06em;
+}
+.price-now{position:relative;margin-bottom:22px}
+.price-now small{display:block;color:rgba(255,255,255,.58);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}
+.price-now strong{font-size:46px;line-height:1;letter-spacing:-.04em}
+.price-now span{font-size:15px;color:rgba(255,255,255,.68);margin-left:4px}
+.cockpit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative}
+.mini-card{
+  min-height:104px;border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.07);
+  border-radius:18px;padding:14px;
+}
+.mini-card .lab{font-size:11px;color:rgba(255,255,255,.58);font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.mini-card .val{font-size:25px;font-weight:900;line-height:1;color:white;letter-spacing:-.03em}
+.mini-card .val.gold{color:var(--gold)}
+.mini-card .caption{font-size:12px;color:rgba(255,255,255,.62);margin-top:7px;line-height:1.4}
+.cockpit-foot{
+  position:relative;margin-top:14px;padding:14px 16px;border-radius:18px;
+  background:rgba(228,160,37,.12);border:1px solid rgba(228,160,37,.24);
+  font-size:13px;color:rgba(255,255,255,.78);
+}
+.cockpit-foot strong{color:white}
+.anchor{
+  position:sticky;top:74px;z-index:1200;background:rgba(250,250,247,.88);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+}
+.anchor-inner{
+  max-width:var(--max);margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:12px 24px;
+  justify-content:center;
+  scrollbar-width:none;
+}
+.anchor-inner::-webkit-scrollbar{display:none}
+@media (max-width:1100px){.anchor-inner{justify-content:flex-start}}
+.anchor a{
+  white-space:nowrap;display:inline-flex;align-items:center;height:34px;padding:0 13px;
+  border-radius:999px;font-size:12px;font-weight:800;color:var(--muted);
+  border:1px solid transparent;
+}
+.anchor a.active,.anchor a:hover{color:var(--green);background:var(--green-100);border-color:rgba(0,140,68,.15)}
+section{padding:82px 24px}
+.container{max-width:var(--max);margin:0 auto}
+.section-head{display:grid;grid-template-columns:340px minmax(0,1fr);gap:42px;align-items:end;margin-bottom:32px}
+.section-label{
+  color:var(--green);font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+  display:flex;align-items:center;gap:10px;
+}
+.section-label::before{content:"";width:30px;height:2px;background:var(--green)}
+.section-head h2{margin:0;font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(30px,4vw,48px);line-height:1.06;letter-spacing:-.02em}
+.section-head p{margin:12px 0 0;color:var(--muted);font-size:16px;max-width:720px}
+.deck{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;
+}
+.decision-card{
+  background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px;
+  box-shadow:var(--shadow-soft);min-height:190px;
+}
+.decision-card .num{font-size:11px;font-weight:900;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.decision-card h3{font-size:19px;margin:0 0 10px;line-height:1.2;letter-spacing:-.02em}
+.decision-card p{font-size:14px;color:var(--muted);margin:0;line-height:1.52}
+.decision-card strong{color:var(--ink)}
+.panel{
+  background:var(--white);border:1px solid var(--line);border-radius:32px;padding:30px;
+  box-shadow:var(--shadow);
+}
+.thesis-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.thesis{
+  background:linear-gradient(180deg,#FFFFFF 0%, #FCFCFA 100%);
+  border:1px solid var(--line);border-radius:26px;padding:26px;position:relative;overflow:hidden;
+}
+.thesis::after{content:"";position:absolute;left:26px;right:26px;top:0;height:3px;background:linear-gradient(90deg,var(--green),var(--gold))}
+.thesis .index{font-size:42px;font-weight:900;color:rgba(0,140,68,.12);letter-spacing:-.04em;margin-bottom:18px}
+.thesis h3{font-size:23px;line-height:1.14;margin:0 0 18px;letter-spacing:-.025em}
+.evidence{display:grid;gap:12px}
+.evidence div{border-top:1px dashed var(--line);padding-top:12px}
+.evidence b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--soft);margin-bottom:4px}
+.evidence span{font-size:14px;color:var(--muted)}
+.evidence strong{color:var(--ink)}
+.metrics{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;
+}
+.metric{
+  background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px;
+  box-shadow:var(--shadow-soft);min-height:150px;
+}
+.metric .label{font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;color:var(--green);margin-bottom:11px}
+.metric .value{font-size:38px;line-height:1;font-weight:900;letter-spacing:-.045em;margin-bottom:10px}
+.metric .value span{font-size:15px;color:var(--muted);font-weight:800;margin-left:3px}
+.metric p{font-size:13px;color:var(--muted);margin:0}
+.metric.warn .label,.metric.warn .value{color:var(--gold)}
+.yoy-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.02em;margin-bottom:10px}
+.yoy-chip.up{background:var(--green-100);color:var(--green)}
+.yoy-chip.down{background:var(--red-100);color:var(--red)}
+.yoy-chip.neu{background:var(--gold-100);color:#7A4C00}
+.valuation-layout{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(330px,.75fr);gap:18px;align-items:stretch;
+}
+.ladder{
+  min-height:390px;display:flex;flex-direction:column;justify-content:center;gap:26px;
+}
+.bar-row{display:grid;grid-template-columns:118px minmax(0,1fr) 92px;gap:14px;align-items:center}
+.bar-row .name{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.track{height:20px;background:#ECEFEB;border-radius:999px;position:relative;overflow:visible}
+.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--green),var(--gold));width:0;transition:width 1.3s cubic-bezier(.16,1,.3,1)}
+.fill.bear{background:linear-gradient(90deg,#A7B0A9,var(--red))}
+.fill.bull{background:linear-gradient(90deg,var(--green),#00B85A)}
+.current-marker{
+  position:absolute;left:66.1%;top:-10px;height:40px;width:2px;background:var(--ink);opacity:.5;border-radius:2px;
+}
+.current-marker::after{
+  content:"79.400";position:absolute;left:50%;transform:translateX(-50%);top:-25px;
+  font-size:10px;font-weight:900;color:var(--ink);background:white;border:1px solid var(--line);border-radius:8px;padding:2px 6px;
+}
+.bar-row .px{font-size:18px;font-weight:900;text-align:right;letter-spacing:-.03em}
+.bar-row .up{font-size:12px;color:var(--gold);font-weight:900;text-align:right}
+.bar-row .down{color:var(--red)}
+.assumption{
+  background:linear-gradient(180deg,var(--green-900),#052016);color:white;border-radius:28px;padding:28px;
+  border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);
+}
+.assumption h3{margin:0 0 18px;font-size:24px;line-height:1.15}
+.assumption-row{display:flex;justify-content:space-between;gap:12px;border-top:1px dashed rgba(255,255,255,.18);padding:13px 0;font-size:14px}
+.assumption-row span:first-child{color:rgba(255,255,255,.65)}
+.assumption-row strong{font-weight:900}
+.assumption .final{margin-top:14px;border-radius:18px;background:rgba(228,160,37,.14);border:1px solid rgba(228,160,37,.26);padding:16px}
+.assumption .final small{display:block;color:rgba(255,255,255,.66);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;margin-bottom:6px}
+.assumption .final b{font-size:32px;line-height:1;color:var(--gold)}
+.lens-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.lens-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:var(--shadow-soft)}
+.lens-card.primary{border-color:rgba(0,140,68,.30);background:linear-gradient(180deg,#FFFFFF,var(--green-100))}
+.lens-card .lens-name{font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.lens-card.primary .lens-name{color:var(--green)}
+.lens-card .lens-val{font-size:28px;font-weight:900;line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.lens-card .lens-val span{font-size:13px;color:var(--muted);font-weight:600;margin-left:4px}
+.lens-card .lens-foot{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.4}
+.lens-card .lens-foot strong{color:var(--ink)}
+.conv-badge{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:10px 16px;border-radius:999px;background:var(--gold-100);border:1px solid rgba(228,160,37,.30);font-size:13px;font-weight:800;color:#7A4C00}
+.timeline{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;position:relative;
+}
+.time-card{
+  background:var(--white);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow-soft);
+}
+.time-card .when{font-size:12px;font-weight:900;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.time-card h3{margin:0 0 10px;font-size:21px;line-height:1.18;letter-spacing:-.02em}
+.time-card p{margin:0;color:var(--muted);font-size:14px}
+.time-card p strong{color:var(--green)}
+.risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.risk-table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:20px}
+.risk-table th,.risk-table td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
+.risk-table th{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--soft);font-weight:900}
+.risk-table td strong{display:block;margin-bottom:4px}
+.severity{
+  display:inline-flex;align-items:center;justify-content:center;border-radius:999px;min-width:74px;height:26px;
+  font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;
+}
+.severity.high{background:var(--red-100);color:var(--red)}
+.severity.mid{background:var(--gold-100);color:#7A4C00}
+.severity.low{background:var(--green-100);color:var(--green)}
+.action-plan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.step{
+  color:white;border-radius:28px;padding:28px;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,var(--green-800),var(--green-900));box-shadow:var(--shadow);
+}
+.step:nth-child(2){background:linear-gradient(180deg,#8A641A,#5E4210)}
+.step:nth-child(3){background:linear-gradient(180deg,#1A3328,#051F15)}
+.step .pct{position:absolute;right:20px;top:8px;font-size:74px;font-weight:900;line-height:1;color:rgba(255,255,255,.08);letter-spacing:-.08em}
+.step .label{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.66);margin-bottom:18px}
+.step h3{margin:0 0 12px;font-size:23px;line-height:1.14}
+.step p{margin:0;color:rgba(255,255,255,.75);font-size:14px}
+.conditions{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.condition{
+  background:var(--white);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow-soft);
+}
+.condition h3{margin:0 0 12px;font-size:20px}
+.condition ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+.condition li{margin-bottom:8px}
+.condition.up{border-left:4px solid var(--green)}
+.condition.down{border-left:4px solid var(--red)}
+.deep-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px}
+details{
+  background:var(--white);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-soft);
+  overflow:hidden;margin-bottom:12px;
+}
+summary{
+  cursor:pointer;padding:20px 22px;font-weight:900;letter-spacing:-.01em;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:18px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";width:26px;height:26px;border-radius:999px;background:var(--green-100);color:var(--green);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+details[open] summary::after{content:"–";background:var(--gold-100);color:#7A4C00}
+.detail-body{padding:0 22px 22px;color:var(--muted);font-size:14px}
+.detail-body ul{margin:10px 0 0;padding-left:18px}
+.side-note{
+  background:linear-gradient(180deg,#FFFFFF 0%,var(--paper-2) 100%);
+  border:1px solid var(--line);border-radius:28px;padding:24px;height:max-content;position:sticky;top:140px;
+}
+.side-note h3{margin:0 0 12px;font-size:22px;line-height:1.16}
+.side-note p{margin:0;color:var(--muted);font-size:14px}
+.side-note .score{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;
+}
+.score div{background:white;border:1px solid var(--line);border-radius:18px;padding:14px}
+.score small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--soft);font-weight:900;margin-bottom:6px}
+.score strong{font-size:24px;color:var(--green);line-height:1}
+.footer{
+  background:#0B0E0C;color:rgba(255,255,255,.68);padding:54px 24px 34px;
+}
+.footer-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.footer img{height:32px;margin-bottom:12px;filter:brightness(1.12)}
+.footer h4{color:white;margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.14em}
+.footer p,.footer li{font-size:12px;line-height:1.7}
+.footer ul{list-style:none;margin:0;padding:0}
+.footer li svg.ico{width:12px;height:12px;display:inline-block;vertical-align:middle;margin-right:6px;opacity:.6}
+.footer li a{color:rgba(255,255,255,.75);text-decoration:underline;text-underline-offset:3px}
+.disclaimer{
+  max-width:var(--max);margin:28px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.10);
+  font-size:11px;color:rgba(255,255,255,.52);line-height:1.7;
+}
+.disclaimer a{color:rgba(255,255,255,.82);text-decoration:underline;text-underline-offset:3px}
+.data-sources{max-width:var(--max);margin:18px auto 0;padding-top:14px;border-top:1px dotted rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.55);line-height:1.7}
+.data-sources strong{color:rgba(255,255,255,.75)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr;padding-top:54px}
+  .cockpit{max-width:560px}
+  .section-head{grid-template-columns:1fr;gap:12px}
+  .deck,.thesis-grid,.metrics,.timeline,.action-plan,.lens-grid{grid-template-columns:1fr 1fr}
+  .valuation-layout,.risk-grid,.deep-grid,.footer-inner{grid-template-columns:1fr}
+  .side-note{position:static}
+}
+@media (max-width:640px){
+  /* V0.g — Mobile responsive lock 2026-05-21 (patch v2): giữ brand, ẩn 3 nút, hero static block */
+  .top-actions{display:none!important}
+  .topbar-inner{height:auto;min-height:54px;flex-direction:row;align-items:center;padding:10px 14px;gap:10px}
+  .brand-divider{display:none}
+  .brand-mark img{height:26px}
+  .brand-copy strong{font-size:11.5px}
+  .brand-copy span{font-size:11px}
+  .anchor{top:56px!important}
+  html{scroll-padding-top:120px}
+  div[style*="grid-template-columns:repeat(2,minmax(0,1fr))"]{grid-template-columns:1fr!important}
+  div[style*="grid-template-columns:repeat(3,minmax(0,1fr))"]{grid-template-columns:1fr!important}
+  .hero-stage{display:flex;flex-direction:column;min-height:0;aspect-ratio:auto;overflow:hidden}
+  .hero-stage img{position:relative;width:100%;height:auto;min-height:0;aspect-ratio:16/10;display:block}
+  .hero-stage::after{display:none}
+  .hero-stage .hero-overlays{position:static;display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;background:#FAFAF7;border-bottom:1px solid var(--line);max-width:none;order:-1}
+  .hero-chip{background:rgba(0,140,68,.08);color:var(--green-800);border-color:rgba(0,140,68,.18);height:30px;font-size:11px}
+  .hero-chip.gold{background:rgba(228,160,37,.18);color:#7A4C00;border-color:rgba(228,160,37,.32)}
+  .hero-stage .caption{position:static;background:linear-gradient(135deg,#0B2618,#052016);padding:18px 20px 20px;color:#fff;max-width:none}
+  .hero-stage .caption h3{font-size:20px;color:#fff;margin-bottom:8px}
+  .hero-stage .caption p{font-size:13px;max-width:100%;color:rgba(255,255,255,.86)}
+  .hero-stage.hero-wide{min-height:0;margin-top:0}
+  .hero-stage.hero-wide img{min-height:0;aspect-ratio:16/10}
+  .hero-stage.hero-wide .caption{padding:20px 18px}
+  .hero-stage.hero-wide .caption h3{font-size:22px}
+  .hero-stage.hero-wide::after{display:none}
+  .hero-inner,section{padding-left:18px;padding-right:18px}
+  .hero h1{font-size:46px}
+  .cockpit{border-radius:26px;padding:20px}
+  .cockpit-grid,.deck,.thesis-grid,.metrics,.timeline,.action-plan,.conditions,.lens-grid{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:82px 1fr 72px;gap:10px}
+  .bar-row .px{font-size:15px}
+}
+@media (max-width:480px){
+  .hero h1{font-size:clamp(40px,12vw,56px)}
+}
+@media (max-width:380px){
+  .hero h1{font-size:42px;line-height:1.04}
+}
+@media print{
+  .topbar,.anchor,.progress,.top-actions{display:none!important}
+  body{background:white}
+  section{padding:28px 0;page-break-inside:avoid}
+  .container,.hero-inner,.footer-inner,.disclaimer{max-width:none;margin:0 22px}
+  .reveal{opacity:1;transform:none}
+  .particles{display:none}
+}
+
+.visual-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:18px;margin-bottom:22px}
+.media-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+.media-card{position:relative;overflow:hidden;border-radius:28px;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow)}
+.media-card img{display:block;width:100%;height:100%;object-fit:cover;min-height:260px;filter:saturate(.98) contrast(1.02)}
+.media-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px;color:white;background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.78) 100%);font-size:13px;line-height:1.45}
+.media-card figcaption strong{color:#FFD37A}
+.chart-board{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+.chart-panel{padding:26px 26px 20px}
+.chart-panel h3{margin:0 0 8px;font-size:24px;line-height:1.14;letter-spacing:-.02em}
+.chart-panel p{margin:0 0 18px;color:var(--muted);font-size:14px}
+.chart-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.chart-svg{width:100%;min-width:760px;height:auto;display:block}
+.chart-note{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}
+.chart-note strong{color:var(--green)}
+@media (max-width:900px){.visual-grid,.media-stack{grid-template-columns:1fr;grid-template-rows:auto}.media-stack{display:grid}.media-card img{min-height:220px}}
+
+.hero-copy{display:flex;flex-direction:column;gap:18px}
+.hero-stage{position:relative;overflow:hidden;border-radius:28px;border:1px solid var(--line);background:var(--white);box-shadow:var(--shadow);min-height:290px}
+.hero-stage img{display:block;width:100%;height:100%;object-fit:cover;min-height:290px;filter:saturate(1.02) contrast(1.02)}
+.hero-stage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02) 0%,rgba(0,0,0,.55) 100%)}
+.hero-stage .caption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px;color:white}
+.hero-stage .caption h3{margin:0 0 8px;font-size:24px;line-height:1.12;letter-spacing:-.02em}
+.hero-stage .caption p{margin:0;max-width:70%;font-size:14px;line-height:1.45;color:rgba(255,255,255,.86)}
+.hero-overlays{position:absolute;top:18px;left:18px;z-index:2;display:flex;gap:10px;flex-wrap:wrap;max-width:86%}
+.hero-chip{display:inline-flex;align-items:center;height:34px;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.4);font-size:12px;font-weight:800;color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.hero-chip.gold{background:rgba(228,160,37,.92);color:#2A1B00;border-color:rgba(228,160,37,.45)}
+.map-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.map-card{background:linear-gradient(180deg,#FFFFFF 0%,#FCFCFA 100%);border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow-soft)}
+.map-card h4{margin:0 0 8px;font-size:22px;line-height:1.12;letter-spacing:-.02em}
+.map-card p{margin:0 0 14px;color:var(--muted);font-size:14px}
+.map-note{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}
+.map-note strong{color:var(--green)}
+.insider-table-c{width:100%;border-collapse:collapse;font-size:13px}
+.insider-table-c tr{border-bottom:1px dashed var(--line)}
+.insider-table-c tr:last-child{border-bottom:none}
+.insider-table-c td{padding:12px 8px;vertical-align:middle}
+.ic-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900}
+.ic-icon.neu{background:var(--gold-100);color:#9A6500}
+.ic-icon.pos{background:var(--green-100);color:var(--green)}
+.ic-name{font-size:14px;font-weight:900;color:var(--ink)}
+.ic-sub{font-size:12px;color:var(--muted)}
+.ic-ratio{font-size:13px;font-weight:900;color:var(--ink);white-space:nowrap;text-align:right}
+.ic-chip{display:inline-block;margin-top:4px;padding:2px 8px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.ic-chip.neu{background:var(--gold-100);color:#7A4C00}
+.ic-chip.pos{background:var(--green-100);color:var(--green)}
+.own-stat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.own-stat{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow-soft)}
+.own-stat small{display:block;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin-bottom:6px}
+.own-stat strong{font-size:22px;font-weight:900;line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.own-stat strong.gold{color:#8A5A00}
+
+.section-head h2::after{content:"";display:block;width:88px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--green),var(--gold));margin-top:14px}
+.hero{padding-bottom:18px}
+.hero-inner{align-items:start}
+.hero-lead{max-width:780px}
+.hero-note{border-radius:20px}
+.summary-ribbon{position:relative;z-index:3;max-width:var(--max);margin:0 auto 10px;padding:0 24px 12px}
+.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.summary-item{background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:20px;padding:16px 18px;box-shadow:var(--shadow-soft)}
+.summary-item b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.summary-item span{display:block;font-size:14px;line-height:1.45;color:var(--muted)}
+.summary-item strong{color:var(--ink)}
+.anchor{top:74px}
+.anchor-inner{padding-top:10px;padding-bottom:14px}
+.anchor a{font-size:11.5px;letter-spacing:.02em}
+.panel,.chart-panel,.decision-card,.thesis,.metric,.map-card,.step,.condition,.side-note,.assumption,.risk-table,.time-card,.media-card,.lens-card,.deep-grid details{box-shadow:0 12px 28px rgba(0,0,0,.045)}
+.section-label{margin-top:4px}
+.decision-card,.metric,.map-card,.step,.lens-card,.time-card{transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease}
+.decision-card:hover,.metric:hover,.map-card:hover,.step:hover,.lens-card:hover,.time-card:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.07)}
+.hero-chip{font-size:11px;letter-spacing:.02em}
+.footer{padding-top:58px}
+.footer-inner{align-items:start}
+.footer h4{letter-spacing:.12em}
+.footer .version-pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:999px;background:rgba(228,160,37,.16);border:1px solid rgba(228,160,37,.32);color:#FFD37A;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:900px){.summary-grid{grid-template-columns:1fr 1fr}.own-stat-row{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.summary-grid{grid-template-columns:1fr}.own-stat-row{grid-template-columns:1fr 1fr}}
+
+.client-cta{position:relative;overflow:hidden;background:linear-gradient(135deg,#053521 0%,#008C44 100%);color:white;padding:84px 24px}
+.client-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 22%,rgba(228,160,37,.22),transparent 44%)}
+.client-cta-inner{max-width:980px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.client-cta .eyebrow{font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:#FFD37A;margin-bottom:18px}
+.client-cta h2{font-size:clamp(30px,4vw,52px);line-height:1.08;letter-spacing:-.04em;margin:0 0 18px;font-family:'Playfair Display',serif;font-weight:900}
+.client-cta h2 em{font-style:normal;color:#FFD37A}
+.client-cta p{font-size:18px;line-height:1.55;color:rgba(255,255,255,.86);margin:0 auto;max-width:820px}
+.conviction-mini{display:inline-flex;align-items:center;gap:14px;margin-top:30px;padding:12px 18px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18)}
+.conviction-mini b{font-size:14px;color:#FFD37A}.conviction-mini span{font-size:13px;color:rgba(255,255,255,.75)}
+
+/* ===== V0.e v5.2 — E0/E2/E11 ===== */
+.topbar-inner{height:82px}
+.brand{gap:18px}
+.brand-mark{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.brand-mark img{height:32px;width:auto;display:block;flex:0 0 auto;align-self:flex-start;max-width:none}
+.brand-slogan{font-style:italic;font-weight:400;font-size:10.5px;color:#7A4C00;white-space:nowrap;letter-spacing:.01em}
+.brand-divider{width:1px;height:36px;background:var(--line);display:inline-block}
+@media (max-width:900px){.brand{flex-direction:column;align-items:flex-start;gap:6px}.brand-divider{display:none}}
+.tag.anchor-pe{background:rgba(0,140,68,.04);color:var(--green-800);border-color:rgba(0,140,68,.14)}
+.tag.anchor-l3{background:rgba(228,160,37,.06);color:#7A4C00;border-color:rgba(228,160,37,.20)}
+.tag .anchor-label{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;opacity:.72;margin-right:6px}
+.tag .anchor-val{font-size:13px;font-weight:900}
+.cockpit-foot{display:flex;align-items:flex-start;gap:14px;padding:14px 16px;border-radius:18px;background:rgba(184,75,67,.18);border:1px solid rgba(255,160,150,.45);color:rgba(255,255,255,.92)}
+.cockpit-foot .risk-mark{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:#B84B43;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px;line-height:1}
+.cockpit-foot .risk-body{flex:1 1 auto;min-width:0}
+.cockpit-foot .risk-label{display:block;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#FFC1B8;margin-bottom:4px}
+.cockpit-foot .risk-name{display:block;font-size:14px;font-weight:900;color:#FFFFFF;line-height:1.25;margin-bottom:4px;letter-spacing:-.01em}
+.cockpit-foot .risk-check{display:block;font-size:12px;color:rgba(255,255,255,.78);line-height:1.45}
+.footer .brand-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:0}
+.footer .brand-row img{height:32px;width:auto;display:block;margin:0}
+.footer .brand-row .version-pill{margin-top:0;color:#FFD37A;background:rgba(228,160,37,.16);border-color:rgba(228,160,37,.32)}
+.footer .brand-slogan-footer{display:block;font-style:italic;font-weight:400;font-size:12px;color:#FFD37A;opacity:.86;margin-top:10px;letter-spacing:.01em}
+
+/* section heading + hardening */
+.section-head h2{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-weight:800;font-size:clamp(28px,3.4vw,42px);line-height:1.12;letter-spacing:-.025em}
+.section-label{color:var(--green-800)}
+.section-head h2::after{width:72px;height:2px;margin-top:12px}
+.reco{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-weight:900}
+body{overflow-x:clip}
+.panel,.chart-panel,.chart-wrap,.chart-board,.visual-grid,.media-card,.map-card,.condition,.step,.thesis,.metric,.decision-card,.assumption,.valuation-layout,.risk-grid,.deep-grid,.lens-card{min-width:0;max-width:100%}
+.chart-wrap,.anchor-inner,.top-actions{max-width:100%;overflow-x:auto}
+@media (max-width:900px){
+  .anchor::after,.chart-wrap::after{content:"";position:absolute;top:0;right:0;bottom:0;width:36px;pointer-events:none;background:linear-gradient(90deg,rgba(250,250,247,0) 0%,rgba(250,250,247,.96) 100%);z-index:5}
+  .anchor,.chart-wrap{position:relative}
+}
+@media (max-width:640px){.anchor{top:56px}.chart-panel{padding:22px 18px 18px}.chart-svg{min-width:720px}}
+
+/* ext: section bg + content-pattern helpers for MWG */
+.bg-grad{background:linear-gradient(180deg,var(--paper-2),var(--paper))}
+.bg-paper2{background:var(--paper-2)}
+.hero-inner.balanced{align-items:center;gap:48px}
+.hero-copy-col{display:flex;flex-direction:column;gap:14px}
+.hero h1.tldr{font-size:clamp(36px,4.4vw,58px);line-height:1.04;max-width:660px}
+.hero-lead.compact{font-size:clamp(15px,1.5vw,17px);max-width:620px;margin:0}
+.tag-row.anchor-row{margin-top:8px}
+.hero-note.tight{margin-top:14px;max-width:620px}
+.ladder-foot{margin-top:6px;font-size:13px;color:var(--muted)}
+.risk-cell-delta{margin-top:6px;font-weight:900}
+.risk-cell-delta.high{color:var(--red)}
+.risk-cell-delta.mid{color:#7A4C00}
+.condition.gap-top{margin-top:14px}
+.panel.flush-top{margin-top:22px}
+.cons-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:18px}
+.cons-head-left{flex:1 1 auto;min-width:280px}
+.cons-h3{margin:0;font-size:clamp(20px,2.2vw,26px);line-height:1.2;letter-spacing:-.02em;font-weight:800}
+.cons-prices{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:10px;font-size:13px;color:var(--muted)}
+.cons-pr{display:inline-flex;align-items:baseline;gap:6px}
+.cons-pr strong{font-size:16px;font-weight:900;color:var(--ink)}
+.cons-pr.gold{background:var(--gold-100);padding:6px 12px;border-radius:999px;border:1px solid rgba(228,160,37,.26)}
+.cons-pr.gold strong{color:#8A5A00}
+.cons-pr small{font-size:10px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;color:var(--soft)}
+.cons-sep{color:var(--soft);font-size:14px}
+.cons-wrap{margin-top:22px}
+.cons-older{margin-top:14px;border-radius:14px;background:rgba(250,250,247,.6);border:1px dashed var(--line);padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.cons-older-lab{font-size:10px;font-weight:900;letter-spacing:.10em;text-transform:uppercase;color:var(--muted)}
+.cons-older-pill{font-size:11px}
+.cons-older-pill .d{color:var(--soft)}
+.cons-older-pill .v{color:var(--green)}
+.cons-older-sep{color:var(--soft)}
+.review-wrap{margin-top:18px;border:1px solid rgba(0,140,68,.16);border-radius:22px;background:linear-gradient(180deg,#FFFFFF 0%,#F7FBF8 100%);padding:20px 20px 18px}
+.review-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:14px}
+.review-head .eyebrow{display:block;font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:6px}
+.review-head h4{margin:0;font-size:18px;line-height:1.18;letter-spacing:-.02em;color:var(--ink)}
+.review-head .badge{display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:999px;background:var(--gold-100);color:#8A5A00;font-size:10.5px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.review-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+.review-card b{display:block;font-size:12px;color:var(--green-800);margin-bottom:8px}
+.review-card p{margin:0;font-size:12.5px;line-height:1.52;color:var(--muted)}
+.ic-cell-icon{width:48px}
+.risk-aside-h3{margin:0 0 12px;font-size:20px}
+.risk-aside-p{margin:0 0 18px;color:var(--muted);font-size:14px}
+@media (max-width:900px){.review-grid{grid-template-columns:1fr}.review-head{display:block}.review-head .badge{margin-top:12px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+<div class="topbar-inner">
+<a aria-label="OCBS MWG" class="brand" href="#top">
+<span class="brand-mark">
+<img alt="OCBS" src="https://ocbs.com.vn/images/logo.png"/>
+<em class="brand-slogan">Dẫn lối thịnh vượng bền vững</em>
+</span>
+<span aria-hidden="true" class="brand-divider"></span>
+<span class="brand-copy">
+<strong>OCBS · Trung tâm KD HCM 02</strong>
+<span>MWG · Báo cáo cập nhật · 22/05/2026</span>
+</span>
+</a>
+<div class="top-actions">
+<a class="btn primary" href="#decision">Tóm tắt đầu tư</a>
+<a class="btn" href="#deep">Phụ lục</a>
+<a class="btn gold" href="javascript:window.print()">In / PDF</a>
+</div>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="particles" id="particles"></div>
+<div class="hero-inner balanced">
+<div class="hero-copy-col">
+<div class="kicker reveal">OCBS HCM 02 · BÁO CÁO ĐẦU TƯ</div>
+<h1 class="reveal tldr">MWG: <em>tăng tốc bước vào chu kỳ tăng trưởng mới</em></h1>
+<p class="hero-lead reveal compact">Ba câu hỏi cốt lõi cho nhà bán lẻ số 1: <strong>nên làm gì, vì sao bây giờ, rủi ro ở đâu</strong> trong khung 12 tháng.</p>
+<div class="tag-row reveal">
+<span class="tag green">HOSE · MWG</span>
+<span class="tag">Vốn hóa 116.740 tỷ</span>
+<span class="tag">P/E TTM 14,2×</span>
+<span class="tag">P/B 3,31×</span>
+<span class="tag gold">Cổ tức tiền mặt 2.000 đ/CP</span>
+</div>
+<div class="tag-row reveal anchor-row">
+<span class="tag anchor-pe"><span class="anchor-label">P/E MEDIAN 5Y</span><span class="anchor-val">15,1×</span></span>
+<span class="tag anchor-pe"><span class="anchor-label">P/B MEDIAN 5Y</span><span class="anchor-val">3,17×</span></span>
+<span class="tag anchor-l3"><span class="anchor-label">P/E NGÀNH L3</span><span class="anchor-val">14,4×</span></span>
+<span class="tag anchor-l3"><span class="anchor-label">P/B NGÀNH L3</span><span class="anchor-val">3,24×</span></span>
+</div>
+<div class="hero-note reveal tight">
+<b>★</b>
+<p><strong>Thông điệp:</strong> tích lũy từng phần trong vùng 75.400–81.000 đ, tỷ trọng mục tiêu 8% NAV. Nâng tỷ trọng khi biên gộp quý qua mùa hè giữ ≥ 20% và IPO Điện Máy Xanh hoàn tất chào bán.</p>
+</div>
+</div>
+<aside aria-label="Bảng quyết định" class="cockpit reveal">
+<div class="cockpit-head">
+<div>
+<div class="cockpit-title">Bảng quyết định</div>
+</div>
+<div class="reco">MUA / TÍCH LŨY</div>
+</div>
+<div class="price-now">
+<small>Giá hiện tại · 22/05/2026 14:16</small>
+<strong>79.400</strong><span>đ/cp</span>
+</div>
+<div class="cockpit-grid">
+<div class="mini-card">
+<div class="lab">Giá hợp lý cơ sở</div>
+<div class="val">98.400</div>
+<div class="caption">Tiềm năng tăng +24,0%</div>
+</div>
+<div class="mini-card">
+<div class="lab">Kịch bản tốt</div>
+<div class="val gold">120.200</div>
+<div class="caption">Tiềm năng tăng +51,4%</div>
+</div>
+<div class="mini-card">
+<div class="lab">Vùng mua</div>
+<div class="val">75,5–81,1</div>
+<div class="caption">nghìn đồng/cp</div>
+</div>
+<div class="mini-card">
+<div class="lab">Tỷ trọng</div>
+<div class="val">8% NAV</div>
+<div class="caption">bậc Cân bằng</div>
+</div>
+</div>
+<div class="cockpit-foot">
+<span class="risk-mark" aria-hidden="true">!</span>
+<div class="risk-body">
+<span class="risk-label">Rủi ro số 1 — Cao</span>
+<span class="risk-name">Đòn bẩy lợi nhuận trên biên gộp mỏng</span>
+<span class="risk-check">Biên ròng ~4,5%: biên gộp giảm 100bps kéo LNST giảm ~17,7%. Bảng cân đối tiền ròng +18.284 tỷ — đây KHÔNG phải rủi ro nợ. Mốc theo dõi: biên gộp quý ≥ 20%.</span>
+</div>
+</div>
+</aside>
+<figure aria-label="Hero visual MWG" class="hero-stage reveal hero-wide">
+<img alt="Trụ sở MWG Building Q9 — trung tâm điều hành hệ sinh thái bán lẻ" src="https://www.centralcons.vn/wp-content/uploads/2021/12/ERP-TGDD-tam-retouch-scaled.jpg"/>
+<div class="hero-overlays">
+<span class="hero-chip">Thị phần ~45–50%</span>
+<span class="hero-chip">Tiền ròng +18.284 tỷ</span>
+<span class="hero-chip gold">IPO ĐMX vốn hóa ~102.462 tỷ</span>
+</div>
+<div class="caption">
+<h3>IPO Điện Máy Xanh mở khóa giá trị tài sản nền</h3>
+<p>Hồ sơ IPO Điện Máy Xanh được chấp thuận 22/05 cung cấp giá neo thị trường — kéo lăng kính định giá từng phần (SOTP) từ 56.300 đ lên 97.200 đ, gần như khớp phương pháp chính 98.400 đ.</p>
+</div>
+</figure>
+</div>
+</section>
+<section aria-label="Tóm tắt điều hành" class="summary-ribbon">
+<div class="summary-grid">
+<article class="summary-item reveal">
+<b>Điểm mấu chốt</b>
+<span><strong>IPO ĐMX mở khóa giá trị.</strong> Hồ sơ được duyệt cung cấp giá neo, đẩy định giá từng phần sát phương pháp chính.</span>
+</article>
+<article class="summary-item reveal">
+<b>Điểm cần xác nhận</b>
+<span><strong>Biên gộp quý qua mùa hè</strong> phải giữ ≥ 20% và giá niêm yết ĐMX thực tế quanh mức dự kiến.</span>
+</article>
+<article class="summary-item reveal">
+<b>Động lực tái định giá</b>
+<span><strong>Giá neo IPO ĐMX</strong> đẩy lăng kính SOTP 56.300 → 97.200 đ, gần khớp phương pháp chính; tài sản nền đỡ vùng định giá.</span>
+</article>
+<article class="summary-item reveal">
+<b>Hành động đề xuất</b>
+<span><strong>Tích lũy 8% NAV</strong>, giải ngân 3 bước trong vùng mua; nâng tỷ trọng khi IPO hoàn tất chào bán.</span>
+</article>
+</div>
+</section>
+<nav aria-label="Điều hướng báo cáo" class="anchor">
+<div class="anchor-inner">
+<a href="#decision">Tóm tắt đầu tư</a>
+<a href="#thesis">Luận điểm đầu tư</a>
+<a href="#numbers">Số liệu then chốt</a>
+<a href="#visuals">Bằng chứng</a>
+<a href="#valuation">Định giá</a>
+<a href="#catalyst">Xúc tác</a>
+<a href="#risk">Rủi ro</a>
+<a href="#insider">Sở hữu nội bộ</a>
+<a href="#action">Kế hoạch giải ngân</a>
+<a href="#deep">Phụ lục</a>
+</div>
+</nav>
+<section id="decision">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Tóm tắt đầu tư</div>
+<div>
+<h2>Tóm tắt đầu tư: tích lũy có kỷ luật</h2>
+<p>Báo cáo tập trung bốn câu hỏi của nhà đầu tư: điều gì đã thay đổi, vì sao là bây giờ, tiềm năng tăng đến từ đâu, và khi nào phải hạ tỷ trọng.</p>
+</div>
+</div>
+<div class="deck">
+<article class="decision-card reveal">
+<div class="num">01 · Điều đã thay đổi</div>
+<h3>Hồ sơ IPO Điện Máy Xanh được duyệt</h3>
+<p>Hồ sơ IPO ĐMX được chấp thuận <strong>22/05</strong> cung cấp giá neo thị trường — lật câu chuyện từ rủi ro định giá đỉnh sang mở khóa tài sản nền.</p>
+</article>
+<article class="decision-card reveal">
+<div class="num">02 · Vì sao là bây giờ</div>
+<h3>Kế hoạch 2026 đi đúng tiến độ</h3>
+<p>Q1/26 đạt đúng <strong>30%</strong> kế hoạch LNST năm; tín dụng tiêu dùng mở rộng và niềm tin tiêu dùng khôi phục hỗ trợ sản lượng.</p>
+</article>
+<article class="decision-card reveal">
+<div class="num">03 · Nguồn tiềm năng tăng</div>
+<h3>Tăng trưởng EPS cộng giá neo IPO ĐMX</h3>
+<p>Tiềm năng tăng từ tăng trưởng EPS forward; giá neo IPO ĐMX đẩy lăng kính SOTP lên <strong>97.200 đ</strong>, gần khớp phương pháp chính, mở dư địa tới kịch bản Tốt.</p>
+</article>
+<article class="decision-card reveal">
+<div class="num">04 · Tín hiệu dừng tích lũy</div>
+<h3>Biên gộp đảo chiều do khuyến mãi</h3>
+<p>Hạ tỷ trọng nếu biên gộp quý giảm <strong>&lt; 18,9%</strong>, số ngày tồn kho vượt 110, hoặc LNST quý giảm mạnh YoY.</p>
+</article>
+</div>
+</div>
+</section>
+<section id="thesis" class="bg-grad">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Luận điểm đầu tư</div>
+<div>
+<h2>3 trụ cột đầu tư cần theo dõi</h2>
+<p>Luận điểm MWG là cỗ máy lợi nhuận đầu ngành quay lại đỉnh, với bảng cân đối tiền ròng dày và động lực tăng trưởng lợi nhuận còn dư địa.</p>
+</div>
+</div>
+<div class="thesis-grid">
+<article class="thesis reveal">
+<div class="index">01</div>
+<h3>Lợi nhuận tăng tốc từ bảng cân đối mạnh</h3>
+<div class="evidence">
+<div><b>Tín hiệu</b><span>LNST 2025 vượt đỉnh cũ; Q1/26 tăng tốc mạnh; tiền ròng <strong>+18.284 tỷ</strong> hiếm gặp trong ngành bán lẻ.</span></div>
+<div><b>Hàm ý</b><span>EPS tăng trưởng kỷ lục với ROIC dẫn đầu ngành vượt xa WACC — nền tảng tái định giá vững.</span></div>
+</div>
+</article>
+<article class="thesis reveal">
+<div class="index">02</div>
+<h3>Định giá hợp lý + xúc tác IPO ĐMX vừa duyệt</h3>
+<div class="evidence">
+<div><b>Tín hiệu</b><span>P/E TTM <strong>14,2×</strong> ≈ trung vị 5 năm; hồ sơ IPO ĐMX được duyệt 22/05 (vốn hóa ~102.462 tỷ).</span></div>
+<div><b>Hàm ý</b><span>Giá neo thị trường kéo lăng kính SOTP từ 56.300 lên 97.200 đ — gần khớp phương pháp chính, tài sản nền đỡ vùng định giá.</span></div>
+</div>
+</article>
+<article class="thesis reveal">
+<div class="index">03</div>
+<h3>Rủi ro nén biên gộp đòi kỷ luật từng quý</h3>
+<div class="evidence">
+<div><b>Tín hiệu</b><span>Biên ròng mỏng <strong>4,5%</strong>: biên gộp giảm 100bps kéo LNST giảm 17,7%.</span></div>
+<div><b>Hàm ý</b><span>Cần theo dõi biên gộp chuỗi điện thoại–điện máy hàng quý, đặc biệt mùa hè cạnh tranh khuyến mãi.</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="numbers">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Số liệu then chốt · Q1/2026 xác nhận</div>
+<div>
+<h2>Sáu con số định hình quyết định 2026</h2>
+<p>Ba con số chiến lược năm và ba con số vận hành quý gần nhất — đọc chéo để kiểm chứng đà tăng trưởng lợi nhuận đi đúng tiến độ kế hoạch.</p>
+</div>
+</div>
+<div class="metrics">
+<article class="metric warn reveal">
+<div class="label">Kế hoạch LNST 2026</div>
+<div class="value">9.200<span>tỷ</span></div>
+<div class="yoy-chip up">▲ +30,0% YoY</div>
+<p>Q1 đạt đúng 30% kế hoạch năm — đi đúng tiến độ; lịch sử thường vượt kế hoạch thận trọng.</p>
+</article>
+<article class="metric reveal">
+<div class="label">P/E TTM hiện tại</div>
+<div class="value">14,2<span>×</span></div>
+<div class="yoy-chip neu">★ ≈ trung vị 5 năm</div>
+<p>Hết chiết khấu lịch sử; P/B 3,01× phù hợp ROE 25,3% — định giá về vùng hợp lý.</p>
+</article>
+<article class="metric reveal">
+<div class="label">ROIC 2025</div>
+<div class="value">29,5<span>%</span></div>
+<div class="yoy-chip up">▲ vượt WACC ~11%</div>
+<p>Vượt xa chi phí vốn, bền 3 năm — chất lượng vốn dẫn đầu ngành bán lẻ.</p>
+</article>
+<article class="metric reveal">
+<div class="label">LNST Q1/2026</div>
+<div class="value">2.758<span>tỷ</span></div>
+<div class="yoy-chip up">▲ +78,0% YoY</div>
+<p>Biên LNST 5,9% cao nhất từ trước nhờ biên gộp 20,9% và chương trình trả chậm mở rộng.</p>
+</article>
+<article class="metric reveal">
+<div class="label">Doanh thu Q1/2026</div>
+<div class="value">46.462<span>tỷ</span></div>
+<div class="yoy-chip up">▲ +28,6% YoY</div>
+<p>Tăng tốc mạnh nhờ niềm tin tiêu dùng khôi phục; lũy kế ~25% kế hoạch doanh thu 185.000 tỷ năm.</p>
+</article>
+<article class="metric warn reveal">
+<div class="label">Số ngày tồn kho Q1/26</div>
+<div class="value">97,6<span>ngày</span></div>
+<div class="yoy-chip down">▼ +7 ngày so 2024</div>
+<p>Tăng từ 75 (2023) lên 97,6 ngày; dự phòng giảm giá 749 tỷ — ngưỡng theo dõi không vượt 100 ngày.</p>
+</article>
+</div>
+</div>
+</section>
+<section id="visuals" class="bg-grad">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Bằng chứng</div>
+<div>
+<h2>Hai góc nhìn về chu kỳ bán lẻ</h2>
+<p>Chu kỳ 10 năm cho thấy lợi nhuận tạo đáy 2023 rồi vượt đỉnh cũ; quỹ đạo 12 quý xác nhận đà tăng lợi nhuận đi cùng biên gộp phục hồi.</p>
+</div>
+</div>
+<div class="visual-grid">
+<figure class="media-card reveal">
+<img alt="Điện Máy Xanh — quỹ đạo tăng trưởng doanh thu và lợi nhuận" src="https://cafefcdn.com/thumb_w/1200/203337114487263232/2026/3/11/avatar1773226525077-17732265255742085368693.jpg" style="object-fit:contain;background:#FFFFFF;padding:6px"/>
+<figcaption><strong>Điện Máy Xanh</strong> — 2.006 cửa hàng, đóng góp ~60–65% doanh thu hợp nhất.</figcaption>
+</figure>
+<div class="media-stack">
+<figure class="media-card reveal">
+<img alt="Cửa hàng Bách Hóa Xanh — chuỗi thực phẩm tươi sống lớn nhất phía Nam" src="https://cafefcdn.com/203337114487263232/2025/2/25/12-15608487748591121347968-1740449485962-1740449486062131578897.jpg"/>
+<figcaption><strong>Bách Hóa Xanh</strong> — 2.500+ siêu thị, mảng tăng trưởng với lợi nhuận cải thiện.</figcaption>
+</figure>
+<figure class="media-card reveal">
+<img alt="Cửa hàng TopZone — chuỗi Apple Premium Reseller cao cấp do TGDĐ vận hành" src="https://cafefcdn.com/thumb_w/640/203337114487263232/2021/10/22/-163488134341766222337.jpg"/>
+<figcaption><strong>TopZone</strong> — chuỗi cao cấp Apple, neo biên gộp mảng điện thoại.</figcaption>
+</figure>
+</div>
+</div>
+<div class="visual-grid">
+<figure class="media-card reveal">
+<img alt="Đội kỹ thuật và logistics Điện Máy Xanh — hạ tầng dịch vụ hậu mãi" src="https://image.vietstock.vn/2026/04/23/dmx-anh-3.png.jpg"/>
+<figcaption><strong>Dịch vụ kỹ thuật</strong> — lũy kế 4 tháng ~1.200 tỷ (+60% YoY), biên cao neo lợi nhuận.</figcaption>
+</figure>
+<div class="media-stack">
+<figure class="media-card reveal">
+<img alt="Bên trong Bách Hóa Xanh — kệ rau củ tươi mô hình siêu thị mini" src="https://cafefcdn.com/203337114487263232/2025/2/25/bhx-1-1740449486842-17404494871271594770212.jpg"/>
+<figcaption><strong>Doanh thu/ngày BHX cao</strong> — mảng thực phẩm tươi sống đang chuyển sang có lãi bền.</figcaption>
+</figure>
+<figure class="media-card reveal">
+<img alt="Trụ sở MWG Building Q9 — trung tâm điều hành tập trung" src="https://www.centralcons.vn/wp-content/uploads/2021/12/1.jpeg"/>
+<figcaption><strong>Trung tâm điều hành tập trung</strong> — ERP và logistics tự phát triển làm rào cản gia nhập.</figcaption>
+</figure>
+</div>
+</div>
+<div class="chart-board">
+<article class="panel chart-panel reveal">
+<h3>Chu kỳ 10 năm: lợi nhuận vượt đỉnh cũ</h3>
+<p>Doanh thu thuần và LNST (cột) cùng biên lợi nhuận gộp (đường) 2016–2025 và kế hoạch 2026.</p>
+<div class="chart-wrap">
+<svg class="chart-svg" viewBox="0 0 980 400" role="img" aria-label="Biểu đồ cột doanh thu, LNST và đường biên gộp 2016-2025 cùng kế hoạch 2026">
+<defs>
+<linearGradient id="grRev" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1FB36A"/><stop offset="1" stop-color="#007A3B"/>
+</linearGradient>
+</defs>
+<!-- legend -->
+<rect x="120" y="22" width="14" height="10" rx="2" fill="url(#grRev)"/><text x="140" y="31" font-size="11" fill="#5F6460" font-weight="700">Doanh thu thuần</text>
+<rect x="270" y="22" width="14" height="10" rx="2" fill="#E4A025"/><text x="290" y="31" font-size="11" fill="#5F6460" font-weight="700">LNST</text>
+<line x1="350" y1="27" x2="372" y2="27" stroke="#8A5A00" stroke-width="2.5"/><circle cx="361" cy="27" r="3" fill="#8A5A00"/><text x="380" y="31" font-size="11" fill="#5F6460" font-weight="700">Biên gộp %</text>
+<!-- axes + gridlines -->
+<line x1="58" y1="55" x2="58" y2="320" stroke="#D8DDD7" stroke-width="1"/>
+<line x1="58" y1="320" x2="940" y2="320" stroke="#D8DDD7" stroke-width="1"/>
+<line x1="58" y1="258" x2="940" y2="258" stroke="#EEF1ED" stroke-width="1"/>
+<line x1="58" y1="196" x2="940" y2="196" stroke="#EEF1ED" stroke-width="1"/>
+<line x1="58" y1="134" x2="940" y2="134" stroke="#EEF1ED" stroke-width="1"/>
+<text x="52" y="262" font-size="10" fill="#9A9F9A" text-anchor="end">50</text>
+<text x="52" y="200" font-size="10" fill="#9A9F9A" text-anchor="end">100</text>
+<text x="52" y="138" font-size="10" fill="#9A9F9A" text-anchor="end">150</text>
+<text x="44" y="68" font-size="9.5" fill="#5F6460" text-anchor="middle" font-weight="700">DT</text>
+<text x="44" y="80" font-size="9" fill="#9A9F9A" text-anchor="middle">ngh.tỷ</text>
+<text x="948" y="275" font-size="10" fill="#9A6500" text-anchor="start">3</text>
+<text x="948" y="226" font-size="10" fill="#9A6500" text-anchor="start">6</text>
+<text x="948" y="177" font-size="10" fill="#9A6500" text-anchor="start">9</text>
+<text x="950" y="68" font-size="9.5" fill="#9A6500" text-anchor="middle" font-weight="700">LNST</text>
+<!-- columns: revenue (green) + profit (gold) -->
+<g><rect x="72" y="265" width="25" height="55" rx="3" fill="url(#grRev)"/><rect x="103" y="294" width="16" height="26" rx="2" fill="#E4A025"/><text x="84" y="259" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">45</text></g>
+<g><rect x="152" y="238" width="25" height="82" rx="3" fill="url(#grRev)"/><rect x="183" y="284" width="16" height="36" rx="2" fill="#E4A025"/><text x="164" y="232" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">66</text></g>
+<g><rect x="232" y="212" width="25" height="108" rx="3" fill="url(#grRev)"/><rect x="263" y="273" width="16" height="47" rx="2" fill="#E4A025"/><text x="244" y="206" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">87</text></g>
+<g><rect x="312" y="193" width="25" height="127" rx="3" fill="url(#grRev)"/><rect x="343" y="257" width="16" height="63" rx="2" fill="#E4A025"/><text x="324" y="187" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">102</text></g>
+<g><rect x="392" y="185" width="25" height="135" rx="3" fill="url(#grRev)"/><rect x="423" y="256" width="16" height="64" rx="2" fill="#E4A025"/><text x="404" y="179" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">109</text></g>
+<g><rect x="472" y="167" width="25" height="153" rx="3" fill="url(#grRev)"/><rect x="503" y="240" width="16" height="80" rx="2" fill="#E4A025"/><text x="484" y="161" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">123</text></g>
+<g><rect x="552" y="154" width="25" height="166" rx="3" fill="url(#grRev)"/><rect x="583" y="253" width="16" height="67" rx="2" fill="#E4A025"/><text x="564" y="148" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">133</text></g>
+<g><rect x="632" y="173" width="25" height="147" rx="3" fill="url(#grRev)"/><rect x="663" y="316" width="16" height="4" rx="1" fill="#B84B43"/><text x="644" y="167" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">118</text><text x="671" y="312" font-size="10" fill="#B84B43" text-anchor="middle" font-weight="900">0,2</text></g>
+<g><rect x="712" y="153" width="25" height="167" rx="3" fill="url(#grRev)"/><rect x="743" y="259" width="16" height="61" rx="2" fill="#E4A025"/><text x="724" y="147" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">134</text></g>
+<g><rect x="792" y="126" width="25" height="194" rx="3" fill="url(#grRev)"/><rect x="823" y="205" width="16" height="115" rx="2" fill="#E4A025"/><text x="804" y="120" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">156</text><text x="831" y="200" font-size="10" fill="#8A5A00" text-anchor="middle" font-weight="900">7,1</text></g>
+<g><rect x="872" y="90" width="25" height="230" rx="3" fill="#C9CFCB" stroke="#9AA39C" stroke-dasharray="3 3"/><rect x="903" y="170" width="16" height="150" rx="2" fill="#E4A025" opacity="0.78"/><text x="884" y="84" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">185</text><text x="911" y="165" font-size="10" fill="#8A5A00" text-anchor="middle" font-weight="900">9,2</text>
+<rect x="868" y="38" width="58" height="17" rx="8.5" fill="#E4A025"/><text x="897" y="50" font-size="10" fill="#2A1B00" text-anchor="middle" font-weight="900">KH +30%</text></g>
+<!-- gross margin line (right-area, labeled) -->
+<polyline fill="none" stroke="#8A5A00" stroke-width="2.5" stroke-linejoin="round"
+points="100,118 180,122 260,111 340,99 420,74 500,71 580,66 660,100 740,87 820,97"/>
+<polyline fill="none" stroke="#8A5A00" stroke-width="2.5" stroke-dasharray="6 4" points="820,97 900,92"/>
+<circle cx="100" cy="118" r="3.5" fill="#8A5A00"/><circle cx="180" cy="122" r="3.5" fill="#8A5A00"/><circle cx="260" cy="111" r="3.5" fill="#8A5A00"/><circle cx="340" cy="99" r="3.5" fill="#8A5A00"/><circle cx="420" cy="74" r="3.5" fill="#8A5A00"/><circle cx="500" cy="71" r="3.5" fill="#8A5A00"/><circle cx="580" cy="66" r="4" fill="#8A5A00"/><circle cx="660" cy="100" r="4" fill="#B84B43"/><circle cx="740" cy="87" r="3.5" fill="#8A5A00"/><circle cx="820" cy="97" r="3.5" fill="#8A5A00"/><circle cx="900" cy="92" r="4" fill="#FFFFFF" stroke="#8A5A00" stroke-width="2"/>
+<g><rect x="83" y="100" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="100" y="111" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">16,8%</text></g>
+<g><rect x="403" y="56" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="420" y="67" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">22,1%</text></g>
+<g><rect x="563" y="48" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="580" y="59" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">23,1%</text></g>
+<g><rect x="643" y="108" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0CFCB"/><text x="660" y="119" font-size="9.5" fill="#B84B43" text-anchor="middle" font-weight="900">19,0%</text></g>
+<g><rect x="803" y="79" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="820" y="90" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">19,4%</text></g>
+<!-- year labels -->
+<text x="100" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2016</text>
+<text x="180" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2017</text>
+<text x="260" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2018</text>
+<text x="340" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2019</text>
+<text x="420" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2020</text>
+<text x="500" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2021</text>
+<text x="580" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2022</text>
+<text x="660" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2023</text>
+<text x="740" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2024</text>
+<text x="820" y="337" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="700">2025</text>
+<text x="900" y="337" font-size="11" fill="#161616" text-anchor="middle" font-weight="900">KH 26</text>
+</svg>
+</div>
+<div class="chart-note"><strong>Hàm ý:</strong> LNST tạo đáy 168 tỷ năm 2023 rồi bật lên kỷ lục 7.076 tỷ năm 2025, vượt đỉnh cũ 2021; kế hoạch 2026 đặt +30% LNST (9.200 tỷ) trên doanh thu 185.000 tỷ. Biên gộp đỉnh 23,1% (2022) co về 19–20% sau khủng hoảng 2023, đang phục hồi dần. Cột: trục trái = doanh thu, trục phải = LNST (nghìn tỷ). Nguồn: 2016–2017 cophieu68 · 2018–2025 BCTC.</div>
+</article>
+<article class="panel chart-panel reveal">
+<h3>Quỹ đạo 12 quý: lợi nhuận bứt tốc cùng biên gộp</h3>
+<p>Doanh thu thuần và LNST quý (cột) cùng biên lợi nhuận gộp (đường) từ Q2/2023 đến Q1/2026.</p>
+<div class="chart-wrap">
+<svg class="chart-svg" viewBox="0 0 980 400" role="img" aria-label="Biểu đồ cột doanh thu, LNST quý và đường biên gộp Q2/2023 đến Q1/2026">
+<defs>
+<linearGradient id="grRevQ" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1FB36A"/><stop offset="1" stop-color="#007A3B"/>
+</linearGradient>
+</defs>
+<!-- legend -->
+<rect x="120" y="22" width="14" height="10" rx="2" fill="url(#grRevQ)"/><text x="140" y="31" font-size="11" fill="#5F6460" font-weight="700">Doanh thu thuần</text>
+<rect x="270" y="22" width="14" height="10" rx="2" fill="#E4A025"/><text x="290" y="31" font-size="11" fill="#5F6460" font-weight="700">LNST quý</text>
+<line x1="350" y1="27" x2="372" y2="27" stroke="#8A5A00" stroke-width="2.5"/><circle cx="361" cy="27" r="3" fill="#8A5A00"/><text x="380" y="31" font-size="11" fill="#5F6460" font-weight="700">Biên gộp %</text>
+<!-- axes + gridlines -->
+<line x1="58" y1="50" x2="58" y2="320" stroke="#D8DDD7" stroke-width="1"/>
+<line x1="58" y1="320" x2="922" y2="320" stroke="#D8DDD7" stroke-width="1"/>
+<line x1="58" y1="246" x2="922" y2="246" stroke="#EEF1ED" stroke-width="1"/>
+<line x1="58" y1="172" x2="922" y2="172" stroke="#EEF1ED" stroke-width="1"/>
+<line x1="58" y1="97" x2="922" y2="97" stroke="#EEF1ED" stroke-width="1"/>
+<text x="52" y="250" font-size="10" fill="#9A9F9A" text-anchor="end">15</text>
+<text x="52" y="176" font-size="10" fill="#9A9F9A" text-anchor="end">30</text>
+<text x="52" y="101" font-size="10" fill="#9A9F9A" text-anchor="end">45</text>
+<text x="44" y="64" font-size="9.5" fill="#5F6460" text-anchor="middle" font-weight="700">DT</text>
+<text x="44" y="76" font-size="9" fill="#9A9F9A" text-anchor="middle">ngh.tỷ</text>
+<text x="930" y="261" font-size="10" fill="#9A6500" text-anchor="start">1</text>
+<text x="930" y="197" font-size="10" fill="#9A6500" text-anchor="start">2</text>
+<text x="932" y="64" font-size="9.5" fill="#9A6500" text-anchor="middle" font-weight="700">LNST</text>
+<!-- columns -->
+<g><rect x="70" y="174" width="22" height="146" rx="3" fill="url(#grRevQ)"/><rect x="98" y="319" width="15" height="1" rx="1" fill="#E4A025"/><text x="81" y="169" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">29</text></g>
+<g><rect x="141" y="170" width="22" height="150" rx="3" fill="url(#grRevQ)"/><rect x="169" y="319" width="15" height="1" rx="1" fill="#E4A025"/><text x="152" y="165" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">30</text></g>
+<g><rect x="212" y="164" width="22" height="156" rx="3" fill="url(#grRevQ)"/><rect x="240" y="318" width="15" height="2" rx="1" fill="#E4A025"/><text x="223" y="159" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">31</text></g>
+<g><rect x="283" y="164" width="22" height="156" rx="3" fill="url(#grRevQ)"/><rect x="311" y="263" width="15" height="57" rx="2" fill="#E4A025"/><text x="294" y="159" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">31</text><text x="318" y="259" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">0,9</text></g>
+<g><rect x="354" y="151" width="22" height="169" rx="3" fill="url(#grRevQ)"/><rect x="382" y="246" width="15" height="74" rx="2" fill="#E4A025"/><text x="365" y="146" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">34</text></g>
+<g><rect x="425" y="151" width="22" height="169" rx="3" fill="url(#grRevQ)"/><rect x="453" y="269" width="15" height="51" rx="2" fill="#E4A025"/><text x="436" y="146" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">34</text></g>
+<g><rect x="496" y="149" width="22" height="171" rx="3" fill="url(#grRevQ)"/><rect x="524" y="266" width="15" height="54" rx="2" fill="#E4A025"/><text x="507" y="144" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">35</text></g>
+<g><rect x="567" y="141" width="22" height="179" rx="3" fill="url(#grRevQ)"/><rect x="595" y="222" width="15" height="98" rx="2" fill="#E4A025"/><text x="578" y="136" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">36</text><text x="602" y="218" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">1,5</text></g>
+<g><rect x="638" y="134" width="22" height="186" rx="3" fill="url(#grRevQ)"/><rect x="666" y="215" width="15" height="105" rx="2" fill="#E4A025"/><text x="649" y="129" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">38</text></g>
+<g><rect x="709" y="123" width="22" height="197" rx="3" fill="url(#grRevQ)"/><rect x="737" y="207" width="15" height="113" rx="2" fill="#E4A025"/><text x="720" y="118" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">40</text></g>
+<g><rect x="780" y="110" width="22" height="210" rx="3" fill="url(#grRevQ)"/><rect x="808" y="188" width="15" height="132" rx="2" fill="#E4A025"/><text x="791" y="105" font-size="10" fill="#5F6460" text-anchor="middle" font-weight="800">42</text></g>
+<g><rect x="851" y="90" width="22" height="230" rx="3" fill="url(#grRevQ)"/><rect x="879" y="145" width="15" height="175" rx="2" fill="#E4A025" stroke="#8A5A00" stroke-width="1.2"/><text x="862" y="85" font-size="10" fill="#161616" text-anchor="middle" font-weight="900">46</text><text x="886" y="141" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">2,8</text></g>
+<!-- gross margin line -->
+<polyline fill="none" stroke="#8A5A00" stroke-width="2.5" stroke-linejoin="round"
+points="95,90 166,116 237,54 308,68 379,67 450,76 521,85 592,79 663,77 734,88 805,72 876,71"/>
+<circle cx="95" cy="90" r="3.5" fill="#8A5A00"/><circle cx="166" cy="116" r="4.5" fill="#B84B43"/><circle cx="237" cy="54" r="3.5" fill="#8A5A00"/><circle cx="308" cy="68" r="3.5" fill="#8A5A00"/><circle cx="379" cy="67" r="3.5" fill="#8A5A00"/><circle cx="450" cy="76" r="3.5" fill="#8A5A00"/><circle cx="521" cy="85" r="3.5" fill="#8A5A00"/><circle cx="592" cy="79" r="3.5" fill="#8A5A00"/><circle cx="663" cy="77" r="3.5" fill="#8A5A00"/><circle cx="734" cy="88" r="3.5" fill="#8A5A00"/><circle cx="805" cy="72" r="3.5" fill="#8A5A00"/><circle cx="876" cy="71" r="4.5" fill="#8A5A00"/>
+<g><rect x="149" y="99" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0CFCB"/><text x="166" y="110" font-size="9.5" fill="#B84B43" text-anchor="middle" font-weight="900">15,3%</text></g>
+<g><rect x="362" y="48" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="379" y="59" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">21,4%</text></g>
+<g><rect x="859" y="52" width="34" height="15" rx="7.5" fill="#FFFFFF" stroke="#E0D7C0"/><text x="876" y="63" font-size="9.5" fill="#8A5A00" text-anchor="middle" font-weight="900">20,9%</text></g>
+<!-- quarter labels -->
+<text x="95" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q2/23</text>
+<text x="166" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q3/23</text>
+<text x="237" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q4/23</text>
+<text x="308" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q1/24</text>
+<text x="379" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q2/24</text>
+<text x="450" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q3/24</text>
+<text x="521" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q4/24</text>
+<text x="592" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q1/25</text>
+<text x="663" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q2/25</text>
+<text x="734" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q3/25</text>
+<text x="805" y="337" font-size="11" fill="#5F6460" text-anchor="middle">Q4/25</text>
+<text x="876" y="337" font-size="11" fill="#161616" text-anchor="middle" font-weight="900">Q1/26</text>
+</svg>
+</div>
+<div class="chart-note"><strong>Hàm ý:</strong> doanh thu tăng đều suốt 12 quý, LNST bứt tốc từ Q1/2024 (903 tỷ) lên kỷ lục 2.758 tỷ Q1/2026 (+78% YoY). Biên gộp biến động mạnh trong 2023 (đáy 15,3% Q3/2023 giữa khủng hoảng sức mua) rồi ổn định quanh 20%, đạt 20,9% Q1/2026 — xác nhận chất lượng tăng trưởng. Cột: trục trái = doanh thu, trục phải = LNST (nghìn tỷ). Nguồn: BCTC quý (Sstock).</div>
+</article>
+</div>
+</div>
+</section>
+<section id="valuation" class="bg-paper2">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Định giá</div>
+<div>
+<h2>Định giá đa lăng kính: cơ sở 98.400 đ</h2>
+<p>Giá hợp lý cơ sở 98.400 đ (P/E 70% và P/B 30%); sau khi hồ sơ IPO ĐMX được duyệt, lăng kính SOTP bật lên 97.200 đ — chỉ lệch −1,3% so phương pháp chính, tức 2/3 phương pháp xác nhận vùng 97–98k. EV/EBITDA giữa chu kỳ 65.800 đ đóng vai biên an toàn; mức độ hội tụ C do duy nhất lăng kính này kéo xuống.</p>
+</div>
+</div>
+<div class="valuation-layout">
+<div class="panel ladder reveal">
+<div class="bar-row">
+<div class="name">Kịch bản tốt</div>
+<div class="track"><div class="fill bull" data-w="100"></div><div class="current-marker" data-price="79.400"></div></div>
+<div><div class="px">120.200</div><div class="up">+51,4%</div></div>
+</div>
+<div class="bar-row">
+<div class="name">Cơ sở</div>
+<div class="track"><div class="fill base" data-w="82"></div></div>
+<div><div class="px">98.400</div><div class="up">+24,0%</div></div>
+</div>
+<div class="bar-row">
+<div class="name">Kịch bản xấu</div>
+<div class="track"><div class="fill bear" data-w="46"></div></div>
+<div><div class="px">55.500</div><div class="up down">−30,1%</div></div>
+</div>
+<p class="ladder-foot">Vạch đứng đậm = giá hiện tại 79.400 đ (22/05/2026 14:16). Giá hợp lý kỳ vọng theo xác suất 97.700 đ (+23,0%); R/R 1:1,7.</p>
+</div>
+<aside class="assumption reveal">
+<h3>Giả định kịch bản cơ sở</h3>
+<div class="assumption-row"><span>P/E mục tiêu</span><strong>14,6×</strong></div>
+<div class="assumption-row"><span>P/B mục tiêu</span><strong>3,01×</strong></div>
+<div class="assumption-row"><span>EPS chuẩn hóa 2026</span><strong>6.200 đ</strong></div>
+<div class="assumption-row"><span>BVPS forward 2026</span><strong>26.308 đ</strong></div>
+<div class="assumption-row"><span>α chất lượng</span><strong>+13%</strong></div>
+<div class="assumption-row"><span>Xác suất Tốt / Cơ sở / Xấu</span><strong>30 / 53 / 17%</strong></div>
+<div class="final">
+<small>Giá hợp lý kịch bản cơ sở</small>
+<b>98.400 đ</b>
+</div>
+</aside>
+</div>
+<div class="lens-grid">
+<article class="lens-card primary reveal">
+<div class="lens-name">Chính · P/E + P/B (P/E 70%)</div>
+<div class="lens-val">98.400<span>đ</span></div>
+<div class="lens-foot"><strong>Phương pháp lõi</strong> — neo EPS forward 2026 đã phục hồi mạnh, ROE 25,3% chống lưng P/B.</div>
+</article>
+<article class="lens-card reveal">
+<div class="lens-name">Phụ · Định giá từng phần (SOTP)</div>
+<div class="lens-val">97.200<span>đ</span></div>
+<div class="lens-foot">Phân kỳ <strong>−1,3%</strong> — neo giá IPO ĐMX 80.000 đ + Bách Hóa Xanh EV/Doanh thu 0,8×, chiết khấu tập đoàn 12%; bật từ 56.300 đ sau khi hồ sơ được duyệt, gần như hội tụ hoàn toàn với phương pháp chính.</div>
+</article>
+<article class="lens-card reveal">
+<div class="lens-name">Phụ · EV/EBITDA giữa chu kỳ 9×</div>
+<div class="lens-val">65.800<span>đ</span></div>
+<div class="lens-foot">Phân kỳ <strong>−33,2%</strong> — chuẩn hóa EBITDA gồm cả đáy 2023; đóng vai biên an toàn.</div>
+</article>
+</div>
+<div class="conv-badge reveal">Mức độ hội tụ C · SOTP ↔ phương pháp chính chỉ −1,3% (gần như hội tụ A) nhờ giá neo IPO ĐMX; chỉ EV/EBITDA giữa chu kỳ kéo xuống, đóng vai biên an toàn</div>
+<article class="panel reveal flush-top">
+<div class="section-label">Phản biện thị trường · 10 báo cáo CTCK 4 tháng gần nhất</div>
+<div class="cons-head">
+<div class="cons-head-left">
+<h3 class="cons-h3">Đồng thuận lệch +10,1% so giá hợp lý OCBS</h3>
+</div>
+<div class="cons-prices">
+<span class="cons-pr"><strong>79.400 đ</strong> <small>Hiện tại</small></span>
+<span class="cons-sep">›</span>
+<span class="cons-pr gold"><strong>98.400 đ</strong> <small>OCBS cơ sở</small></span>
+<span class="cons-sep">›</span>
+<span class="cons-pr"><strong>107.500 đ</strong> <small>Trung vị CTCK</small></span>
+</div>
+</div>
+<div class="chart-wrap cons-wrap">
+<svg class="chart-svg" viewBox="0 0 980 405" role="img" aria-label="Xếp hạng giá mục tiêu 10 báo cáo CTCK 4 tháng so với giá hiện tại và giá hợp lý OCBS">
+<defs>
+<linearGradient id="grBar" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#00A552"/><stop offset="1" stop-color="#007A3B"/>
+</linearGradient>
+<linearGradient id="grBarA" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#F0B84A"/><stop offset="1" stop-color="#D8951C"/>
+</linearGradient>
+</defs>
+<!-- reference lines -->
+<line x1="203" y1="52" x2="203" y2="362" stroke="#B0B5AF" stroke-width="1.4" stroke-dasharray="5 5"/>
+<text x="203" y="44" font-size="11" fill="#5F6460" text-anchor="middle" font-weight="800">79.400 · Hiện tại</text>
+<line x1="520" y1="52" x2="520" y2="362" stroke="#E4A025" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="520" y="44" font-size="11" fill="#8A5A00" text-anchor="middle" font-weight="900">OCBS 98.400</text>
+<!-- rows -->
+<g><text x="12" y="74" font-size="12.5" fill="#161616" font-weight="800">ACBS</text><text x="124" y="74" font-size="9.5" fill="#9A9F9A" text-anchor="end">21/04</text><rect x="130" y="62" width="695" height="16" rx="4" fill="url(#grBar)"/><text x="833" y="74" font-size="12" fill="#161616" font-weight="900">116.700</text></g>
+<g><text x="12" y="105" font-size="12.5" fill="#161616" font-weight="800">PHS</text><text x="124" y="105" font-size="9.5" fill="#9A9F9A" text-anchor="end">13/05</text><rect x="130" y="93" width="677" height="16" rx="4" fill="url(#grBar)"/><text x="815" y="105" font-size="12" fill="#161616" font-weight="900">115.600</text></g>
+<g><text x="12" y="136" font-size="12.5" fill="#161616" font-weight="800">SSI</text><text x="124" y="136" font-size="9.5" fill="#9A9F9A" text-anchor="end">23/04</text><rect x="130" y="124" width="583" height="16" rx="4" fill="url(#grBarA)"/><text x="721" y="136" font-size="12" fill="#161616" font-weight="900">110.000</text></g>
+<g><text x="12" y="167" font-size="12.5" fill="#161616" font-weight="800">SID9</text><text x="124" y="167" font-size="9.5" fill="#9A9F9A" text-anchor="end">05/05</text><rect x="130" y="155" width="552" height="16" rx="4" fill="url(#grBarA)"/><text x="690" y="167" font-size="12" fill="#161616" font-weight="900">108.100</text></g>
+<g><text x="12" y="198" font-size="12.5" fill="#161616" font-weight="800">SSV</text><text x="124" y="198" font-size="9.5" fill="#9A9F9A" text-anchor="end">11/05</text><rect x="130" y="186" width="542" height="16" rx="4" fill="url(#grBar)"/><text x="680" y="198" font-size="12" fill="#161616" font-weight="900">107.500</text></g>
+<g><text x="12" y="229" font-size="12.5" fill="#161616" font-weight="800">SID155</text><text x="124" y="229" font-size="9.5" fill="#9A9F9A" text-anchor="end">04/05</text><rect x="130" y="217" width="487" height="16" rx="4" fill="url(#grBar)"/><text x="625" y="229" font-size="12" fill="#161616" font-weight="900">104.200</text></g>
+<g><text x="12" y="260" font-size="12.5" fill="#161616" font-weight="800">ABS</text><text x="124" y="260" font-size="9.5" fill="#9A9F9A" text-anchor="end">22/04</text><rect x="130" y="248" width="440" height="16" rx="4" fill="url(#grBar)"/><text x="578" y="260" font-size="12" fill="#161616" font-weight="900">101.400</text></g>
+<g><text x="12" y="291" font-size="12.5" fill="#161616" font-weight="800">VPBS</text><text x="124" y="291" font-size="9.5" fill="#9A9F9A" text-anchor="end">06/05</text><rect x="130" y="279" width="410" height="16" rx="4" fill="url(#grBar)"/><text x="548" y="291" font-size="12" fill="#161616" font-weight="900">99.600</text></g>
+<g><text x="12" y="322" font-size="12.5" fill="#161616" font-weight="800">VPBS</text><text x="124" y="322" font-size="9.5" fill="#9A9F9A" text-anchor="end">29/04</text><rect x="130" y="310" width="393" height="16" rx="4" fill="url(#grBarA)"/><text x="531" y="322" font-size="12" fill="#161616" font-weight="900">98.600</text></g>
+<g><text x="12" y="353" font-size="12.5" fill="#161616" font-weight="800">YSVN</text><text x="124" y="353" font-size="9.5" fill="#9A9F9A" text-anchor="end">18/05</text><rect x="130" y="341" width="313" height="16" rx="4" fill="url(#grBar)"/><text x="451" y="353" font-size="12" fill="#161616" font-weight="900">93.800</text><text x="513" y="353" font-size="11" fill="#8A5A00" font-weight="900">★ Mới nhất</text></g>
+<!-- legend -->
+<rect x="130" y="384" width="12" height="11" rx="2" fill="url(#grBar)"/><text x="148" y="393" font-size="11" fill="#5F6460" font-weight="700">Mua</text>
+<rect x="210" y="384" width="12" height="11" rx="2" fill="url(#grBarA)"/><text x="228" y="393" font-size="11" fill="#5F6460" font-weight="700">Khả quan / Trung lập</text>
+<text x="430" y="393" font-size="11" fill="#5F6460" font-weight="700">Trung vị CTCK 107.500 đ · 9/10 khuyến nghị Mua</text>
+</svg>
+</div>
+<div class="chart-note"><strong>Khoảng giá:</strong> 93.800 đ (YSVN, EPS thận trọng) đến 115.600 đ (PHS, dùng định giá từng phần mở khóa IPO ĐMX) · 9/10 báo cáo 4 tháng khuyến nghị MUA. OCBS chọn 98.400 đ: SOTP đã bật lên 97.200 đ nhờ giá neo IPO (gần khớp phương pháp chính), giữ thận trọng vì giá niêm yết 80.000 đ chưa chốt.</div>
+<div class="review-wrap">
+<div class="review-head">
+<div>
+<span class="eyebrow">Góc phản biện OCBS</span>
+<h4>Khác biệt nằm ở phương pháp, không ở giả định lợi nhuận</h4>
+</div>
+<strong class="badge">Đã phản biện</strong>
+</div>
+<div class="review-grid">
+<div class="review-card">
+<b>Giả định</b>
+<p>LNST 2026 các bên sát nhau (9.149–9.512 tỷ); OCBS bám kế hoạch doanh nghiệp +30%, không lạc quan thêm.</p>
+</div>
+<div class="review-card">
+<b>Khoảng cách</b>
+<p>PHS và SSI dùng định giá từng phần mở khóa đầy đủ IPO ĐMX nên cao hơn 15–20%; OCBS thận trọng vì giá niêm yết 80.000 đ chưa chốt.</p>
+</div>
+<div class="review-card">
+<b>Kết luận</b>
+<p>Giữ vùng 98.400 đ; nâng tới kịch bản Tốt khi IPO ĐMX hoàn tất chào bán quanh giá dự kiến.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section id="catalyst">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Catalyst 6–12 tháng</div>
+<div>
+<h2>Ba xúc tác kích hoạt mở rộng P/E</h2>
+<p>Chỉ giữ xúc tác tác động trực tiếp lên định giá. IPO Điện Máy Xanh vừa duyệt là xúc tác tươi mới số một.</p>
+</div>
+</div>
+<div class="timeline">
+<article class="time-card reveal">
+<div class="when">22/05/2026 · Vừa được duyệt</div>
+<h3>IPO Điện Máy Xanh được chấp thuận hồ sơ</h3>
+<p>Chào bán 179,5 triệu CP @ 80.000 đ, vốn hóa ĐMX ~102.462 tỷ. Giá neo lật lăng kính SOTP 56.300 → 97.200 đ. <strong>Δ giá hợp lý +3%, mở dư địa kịch bản Tốt.</strong></p>
+</article>
+<article class="time-card reveal">
+<div class="when">T6/2026 · Sắp tới</div>
+<h3>ĐHĐCĐ chốt kế hoạch LNST kỷ lục 9.200 tỷ</h3>
+<p>Kế hoạch LNST 9.200 tỷ (+30% YoY) vượt kỷ lục 2025, nhờ Bách Hóa Xanh có lãi bền. <strong>Δ giá hợp lý +6%.</strong></p>
+</article>
+<article class="time-card reveal">
+<div class="when">Q2–Q4/2026 · Đang diễn ra</div>
+<h3>Vận hành 4 tháng xác nhận đà tăng</h3>
+<p>DT tháng 4 +22% YoY, biên ròng cải thiện, dịch vụ kỹ thuật +60%. <strong>Δ giá hợp lý +3%.</strong></p>
+</article>
+</div>
+</div>
+</section>
+<section id="risk" class="bg-paper2">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Rủi ro định lượng</div>
+<div>
+<h2>Ba rủi ro lượng hóa cần theo dõi</h2>
+<p>Mỗi rủi ro gắn ngưỡng kích hoạt, tác động lên giá hợp lý và hành động tương ứng — kèm điều kiện nâng/hạ tỷ trọng.</p>
+</div>
+</div>
+<div class="risk-grid">
+<div class="panel reveal">
+<table class="risk-table">
+<thead><tr><th>Rủi ro</th><th>Ngưỡng kích hoạt</th><th>Mức · Δ giá hợp lý</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Nén biên gộp điện thoại–điện máy</strong>Chiến tranh khuyến mãi mùa hè kéo biên gộp xuống</td>
+<td>Biên gộp quý &lt; 18,9% (−200bps YoY)</td>
+<td><span class="severity high">Cao</span><div class="risk-cell-delta high">−12% đến −18%</div></td>
+</tr>
+<tr>
+<td><strong>Giá niêm yết ĐMX thực thấp hơn dự kiến</strong>Giá chào bán thực dưới 80.000 đ (P/B 4,95× hiện cao)</td>
+<td>Giá IPO ĐMX về quanh 60.000 đ → SOTP lùi về ~82.500 đ</td>
+<td><span class="severity mid">Trung bình</span><div class="risk-cell-delta mid">−6% đến −10%</div></td>
+</tr>
+<tr>
+<td><strong>Lợi ích cổ đông thiểu số ĐMX tăng</strong>Tỷ lệ sở hữu MWG giảm sau IPO làm loãng LNST cổ đông mẹ</td>
+<td>NCI ĐMX tăng từ 1,05% lên ~15% từ 2027</td>
+<td><span class="severity mid">Trung bình</span><div class="risk-cell-delta mid">−4% đến −7%</div></td>
+</tr>
+<tr>
+<td><strong>Tồn kho bung nổ và dự phòng tăng</strong>Hàng tồn không bán được mùa điện máy hè</td>
+<td>Số ngày tồn kho &gt; 110 hoặc dự phòng/tồn kho &gt; 4%</td>
+<td><span class="severity mid">Trung bình</span><div class="risk-cell-delta mid">−5% đến −9%</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="panel reveal">
+<h3 class="risk-aside-h3">Xác suất 6–12 tháng</h3>
+<p class="risk-aside-p">Rủi ro số 1 là cấu trúc (đòn bẩy biên gộp), KHÔNG phải nợ — bảng cân đối tiền ròng +18.284 tỷ phòng vệ tốt rủi ro lãi suất.</p>
+<div class="condition up">
+<h3>Điều kiện nâng tỷ trọng</h3>
+<ul>
+<li>IPO Điện Máy Xanh chốt lịch cụ thể → mở khóa định giá từng phần.</li>
+<li>Biên gộp quý ≥ 20% qua mùa hè và LNST vượt kế hoạch lũy kế ≥ 70%.</li>
+</ul>
+</div>
+<div class="condition down gap-top">
+<h3>Điều kiện hạ tỷ trọng</h3>
+<ul>
+<li>Biên gộp giảm &gt; 200bps YoY (xuống &lt; 18,9%) trong 1 quý.</li>
+<li>Số ngày tồn kho vượt 110, hoặc LNST quý giảm &gt; 20% YoY.</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="insider">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Cấu trúc vốn &amp; cổ đông</div>
+<div>
+<h2>Sở hữu phân tán, ngoại kịch trần FOL 49%</h2>
+<p>Không có cổ đông chi phối &gt; 50%; nhóm sáng lập và liên kết ~28%, khối ngoại kịch trần room. Không phát sinh giao dịch nội bộ bán lớn trong 12 tháng.</p>
+</div>
+</div>
+<div class="map-grid">
+<article class="map-card reveal">
+<h4>Giao dịch nội bộ &amp; cổ đông lớn (60 ngày)</h4>
+<p>FireAnt và CBTT không ghi nhận giao dịch bán ròng trọng yếu của người nội bộ; cam kết của ban lãnh đạo còn nguyên.</p>
+<table class="insider-table-c">
+<tr>
+<td class="ic-cell-icon"><span class="ic-icon pos">✓</span></td>
+<td><span class="ic-name">Nguyễn Đức Tài · Chủ tịch</span><br/><span class="ic-sub">Nhà sáng lập · không giao dịch bán lớn 12 tháng</span></td>
+<td class="ic-ratio">2,21%<br/><span class="ic-chip pos">Cam kết</span></td>
+</tr>
+<tr>
+<td><span class="ic-icon neu">●</span></td>
+<td><span class="ic-name">ESOP 2025–2026</span><br/><span class="ic-sub">~10,3 triệu CP giá 10.000 đ · hạn chế chuyển nhượng 2 năm</span></td>
+<td class="ic-ratio">~0,7%<br/><span class="ic-chip neu">Pha loãng thấp</span></td>
+</tr>
+</table>
+<div class="map-note"><strong>Hàm ý:</strong> không có dấu hiệu thoái vốn nội bộ; pha loãng ESOP ~0,7%/năm thấp xa ngưỡng cảnh báo 3% — tín hiệu quản trị trung tính tích cực.</div>
+</article>
+<aside class="map-card reveal">
+<h4>Cơ cấu sở hữu</h4>
+<p>Quyền lực phân tán: pháp nhân liên kết nhóm sáng lập và khối ngoại long-only kịch trần FOL chiếm phần lớn cổ phần lưu hành.</p>
+<table class="insider-table-c">
+<tr><td><span class="ic-name">TNHH Tư vấn ĐT Thế giới Bán lẻ</span><br/><span class="ic-sub">Pháp nhân liên kết nhóm sáng lập</span></td><td class="ic-ratio">10,44%</td></tr>
+<tr><td><span class="ic-name">Arisaig Asia Fund</span><br/><span class="ic-sub">Quỹ ngoại long-only</span></td><td class="ic-ratio">3,45%</td></tr>
+<tr><td><span class="ic-name">Nguyễn Đức Tài</span><br/><span class="ic-sub">Chủ tịch · nhà sáng lập</span></td><td class="ic-ratio">2,21%</td></tr>
+<tr><td><span class="ic-name">Dragon Capital (VEIL)</span><br/><span class="ic-sub">Quỹ ngoại</span></td><td class="ic-ratio">1,99%</td></tr>
+</table>
+<div class="own-stat-row">
+<div class="own-stat"><small>Room ngoại (FOL)</small><strong>49%</strong></div>
+<div class="own-stat"><small>Room còn lại</small><strong class="gold">0%</strong></div>
+<div class="own-stat"><small>Vốn hóa</small><strong>116.740</strong></div>
+<div class="own-stat"><small>Cổ tức tiền 2026</small><strong class="gold">2.000</strong></div>
+</div>
+<div class="map-note"><strong>Hàm ý:</strong> ngoại kịch trần room nên không thể mua thêm ròng; thanh khoản HOSE top 20 đủ cho vị thế lớn — không ràng buộc kích thước danh mục.</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="action">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Kế hoạch giải ngân</div>
+<div>
+<h2>Tích lũy 3 bước · bậc Cân bằng 8% NAV</h2>
+<p>Giá hiện tại 79.400 đ đang trong vùng mua 75.400–81.000 đ; giải ngân theo ba bước với điều kiện xác nhận luận điểm rõ ràng.</p>
+</div>
+</div>
+<div class="action-plan">
+<article class="step reveal">
+<div class="pct">4%</div>
+<div class="label">Bước 1 — Ngay</div>
+<h3>Mở vị thế 4% NAV</h3>
+<p>Tích lũy trong vùng 75.400–81.000 đ. Đây là một nửa tỷ trọng mục tiêu, mở khi giá còn trong vùng mua hợp lý.</p>
+</article>
+<article class="step reveal">
+<div class="pct">2%</div>
+<div class="label">Bước 2 — Xác nhận BCTC</div>
+<h3>Nâng thêm 2% NAV</h3>
+<p>Bổ sung sau BCTC quý xác nhận biên gộp ≥ 20% qua mùa hè và LNST lũy kế ≥ 70% kế hoạch năm.</p>
+</article>
+<article class="step reveal">
+<div class="pct">2%</div>
+<div class="label">Bước 3 — Xác nhận xúc tác</div>
+<h3>Hoàn tất 8% NAV</h3>
+<p>Đưa về đủ tỷ trọng mục tiêu khi IPO chuỗi con có tiến triển hoặc LNST quý vượt kế hoạch rõ rệt.</p>
+</article>
+</div>
+<div class="conditions">
+<div class="condition up">
+<h3>Nâng tỷ trọng (lên Tin tưởng cao 12–15% NAV)</h3>
+<ul>
+<li>IPO Điện Máy Xanh chốt lịch cụ thể → mở khóa định giá từng phần.</li>
+<li>Biên gộp quý ≥ 20% qua mùa hè và LNST vượt kế hoạch 5–10%.</li>
+</ul>
+</div>
+<div class="condition down">
+<h3>Hạ tỷ trọng (về Theo dõi — thoái 50%)</h3>
+<ul>
+<li>Biên gộp quý giảm &gt; 200bps YoY (xuống &lt; 18,9%).</li>
+<li>Số ngày tồn kho &gt; 110, hoặc LNST quý giảm &gt; 20% YoY.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Kết luận cho khách hàng VVIP" class="client-cta">
+<div class="client-cta-inner reveal">
+<div class="eyebrow">★ Kết luận cho khách hàng VVIP ★</div>
+<h2>MWG <em>bước vào chu kỳ tăng trưởng mới</em> với bảng cân đối tiền ròng dày</h2>
+<p>Tích lũy trong vùng 75.400–81.000 đ với tỷ trọng mục tiêu 8% NAV; nâng tỷ trọng khi biên gộp quý giữ ≥ 20% qua mùa hè và IPO chuỗi con có tiến triển mở khóa định giá từng phần.</p>
+<div class="conviction-mini"><b>Độ tin cậy 72/100</b><span>Cơ sở 98.400 đ · Tốt 120.200 đ</span></div>
+</div>
+</section>
+<section id="deep" class="bg-paper2">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-label">Phụ lục</div>
+<div>
+<h2>Đọc sâu: kiểm chứng luận điểm</h2>
+<p>Bằng chứng định lượng cho ba luận điểm chính cùng điểm số tổng hợp cho quyết định đầu tư.</p>
+</div>
+</div>
+<div class="deep-grid">
+<div>
+<details open class="reveal">
+<summary>Luận điểm 1 · Lợi nhuận tăng tốc từ bảng cân đối mạnh</summary>
+<div class="detail-body">
+<ul>
+<li>LNST 2025 = 7.076 tỷ (+89,5% so 2024), vượt cả đỉnh cũ 2021; gấp ~42 lần đáy 2023 (168 tỷ).</li>
+<li>Q1/26 doanh thu 46.462 tỷ (+28,6% YoY), LNST 2.758 tỷ (+78% YoY) — biên LNST 5,9% cao nhất từ trước.</li>
+<li>Tiền ròng +18.284 tỷ; Net Debt/EBITDA cải thiện 2,75× (2024) còn 2,36× (2025).</li>
+<li>ROIC 2025 = 29,5% vượt xa WACC ~11%, bền 3 năm; CFO/LNST 3 năm BQ = 1,64.</li>
+</ul>
+</div>
+</details>
+<details class="reveal">
+<summary>Luận điểm 2 · Định giá hợp lý + xúc tác IPO ĐMX</summary>
+<div class="detail-body">
+<ul>
+<li>P/E TTM 14,2× ≈ trung vị 5 năm (15,1×); hết chiết khấu lịch sử. P/B 3,01× phù hợp ROE 25,3%.</li>
+<li>Sau IPO ĐMX được duyệt, lăng kính SOTP bật từ 56.300 lên 97.200 đ — chỉ lệch −1,3% so phương pháp chính 98.400 đ (gần như hội tụ A).</li>
+<li>Tài sản nền đỡ vững: MWG ~85% ĐMX ≈ 87.000 tỷ + Bách Hóa Xanh 94,99% × 0,8× ≈ 35.640 tỷ + tiền ròng cấp tập đoàn.</li>
+<li>EV/EBITDA giữa chu kỳ 65.800 đ (san phẳng cả đáy 2023) đóng vai biên an toàn; nếu giá IPO về 60k thì SOTP ~82.500 đ vẫn trên EV/EBITDA.</li>
+</ul>
+</div>
+</details>
+<details class="reveal">
+<summary>Luận điểm 3 · Rủi ro nén biên gộp đòi kỷ luật</summary>
+<div class="detail-body">
+<ul>
+<li>Biên ròng mỏng ~4,5%: biên gộp giảm 100bps kéo LNST giảm ~17,7%.</li>
+<li>Số ngày tồn kho tăng 75 (2023) lên 97,6 ngày (Q1/26); dự phòng giảm giá 749 tỷ.</li>
+<li>Mức độ hội tụ định giá C: vùng 56.000–65.000 đ là sàn nếu đà LNST +30% hụt.</li>
+<li>Đa dạng hóa sang bất động sản và tư vấn tài chính — theo dõi phân bổ vốn ngoài lõi.</li>
+</ul>
+</div>
+</details>
+</div>
+<aside class="side-note reveal">
+<h3>Điểm số quyết định</h3>
+<p>Tổng hợp bốn trục đánh giá cho khuyến nghị MUA / TÍCH LŨY, bậc Cân bằng 8% NAV.</p>
+<div class="score">
+<div><small>Đồng thuận</small><strong>9/10</strong></div>
+<div><small>Xúc tác</small><strong>Rõ</strong></div>
+<div><small>Bảng cân đối</small><strong>Mạnh</strong></div>
+<div><small>Định giá</small><strong>Hợp lý</strong></div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<div>
+<div class="brand-row">
+<img alt="OCBS" src="https://ocbs.com.vn/images/logo.png"/>
+<div class="version-pill">TRUNG TÂM KD HCM 02</div>
+</div>
+<em class="brand-slogan-footer">Dẫn lối thịnh vượng bền vững</em>
+</div>
+<div>
+<h4>Liên hệ</h4>
+<ul>
+<li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.93.36 1.85.7 2.73a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.35-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.73.7A2 2 0 0 1 22 16.92z"/></svg>0935.350.356</li>
+<li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><a href="https://ocbs.com.vn" target="_blank" rel="noopener">ocbs.com.vn</a> / <a href="http://sieucophieu.vn" target="_blank" rel="noopener">sieucophieu.vn</a></li>
+<li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Tầng 26, Tòa nhà The Hallmark, số 15 Trần Bạch Đằng, Phường An Khánh, TP.HCM</li>
+</ul>
+</div>
+<div>
+<h4>Báo cáo</h4>
+<ul>
+<li>Mã: MWG · CTCP Đầu tư Thế Giới Di Động</li>
+<li>Phụ trách: Trung Tâm KD HCM02</li>
+<li>Phát hành: 22/05/2026</li>
+<li>Phiên bản: Báo cáo đầu tư · HCM 02 · 22/05/2026</li>
+</ul>
+</div>
+</div>
+<div class="disclaimer">
+Tài liệu do Trung tâm Kinh doanh HCM 02 thuộc OCBS biên soạn cho mục đích tham khảo và chăm sóc khách hàng; <strong>không phải báo cáo phân tích chính thức của Khối Research OCBS</strong>, không phải khuyến nghị mua bán chứng khoán. Mọi quyết định đầu tư thuộc về nhà đầu tư. <strong>Nguồn:</strong> BCTC MWG 2018–Q1/2026 · ĐHĐCĐ &amp; CBTT MWG · dữ liệu thị trường công khai · Trung tâm KD HCM 02 tổng hợp.
+</div>
+<div class="data-sources">
+<strong>Nguồn dữ liệu tham khảo:</strong> BCTC MWG 2018–Q1/2026 · ĐHĐCĐ &amp; CBTT MWG · CafeF · sstock · ACBS/PHS/SSI/VPBS/YSVN (4 tháng gần nhất) · VnExpress/CafeF/Vietstock.
+</div>
+</footer>
+<script>
+(function(){
+  var el=document.getElementById('progress');
+  if(el){window.addEventListener('scroll',function(){var h=document.documentElement;el.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';},{passive:true});}
+})();
+(function(){
+  var sections=document.querySelectorAll('section[id]');
+  var links=document.querySelectorAll('.anchor a');
+  var anchorInner=document.querySelector('.anchor-inner');
+  if(!links.length)return;
+  function updateActive(){
+    var current=sections[0]?sections[0].id:null;
+    var y=window.scrollY+150;
+    sections.forEach(function(sec){if(sec.offsetTop<=y)current=sec.id;});
+    links.forEach(function(a){
+      var isActive=a.getAttribute('href')==='#'+current;
+      a.classList.toggle('active',isActive);
+      if(isActive&&anchorInner){
+        var aRect=a.getBoundingClientRect();var iRect=anchorInner.getBoundingClientRect();
+        var target=anchorInner.scrollLeft+aRect.left-iRect.left-iRect.width/2+aRect.width/2;
+        anchorInner.scrollTo({left:target,behavior:'smooth'});
+      }
+    });
+  }
+  window.addEventListener('scroll',updateActive,{passive:true});updateActive();
+})();
+function generateParticles(id){
+  var el=document.getElementById(id);if(!el)return;
+  for(var i=0;i<30;i++){
+    var p=document.createElement('div');
+    p.className='particle'+(Math.random()<0.35?' warm':'');
+    p.style.left=(Math.random()*100)+'%';
+    p.style.animationDuration=(10+Math.random()*14)+'s';
+    p.style.animationDelay=(Math.random()*10)+'s';
+    p.style.setProperty('--drift',(Math.random()*200-100)+'px');
+    var s=2+Math.random()*4;p.style.width=p.style.height=s+'px';
+    el.appendChild(p);
+  }
+}
+var _io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    e.target.querySelectorAll('.fill[data-w]').forEach(function(bar){
+      var w=bar.dataset.w;
+      if(w){setTimeout(function(){bar.style.width=Math.max(0,parseFloat(w))+'%';},200);}
+    });
+  });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(function(el){_io.observe(el);});
+generateParticles('particles');
+/* Mobile chart auto-scroll-to-latest */
+function autoScrollToLatest(){
+  document.querySelectorAll('.chart-wrap,.consensus-chart-wrap').forEach(function(wrap){
+    if(wrap.scrollWidth>wrap.clientWidth){wrap.scrollLeft=wrap.scrollWidth-wrap.clientWidth;}
+  });
+}
+requestAnimationFrame(function(){requestAnimationFrame(autoScrollToLatest);});
+window.addEventListener('load',autoScrollToLatest);
+</script>
+</body>
+</html>
