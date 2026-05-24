@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!-- MWG vs ĐMX — TRANG SO SÁNH ĐẦU TƯ (Tier 1) — Trung Tâm KD HCM02, OCBS — 23/05/2026
+<!-- MWG vs ĐMX — TRANG SO SÁNH ĐẦU TƯ (Tier 1) — Trung Tâm KD HCM02, OCBS — 24/05/2026
      Quyết định 12 tháng: holding MWG vs IPO Điện Máy Xanh · A4 print-ready.
+     Update 24/05: nhấn mạnh MWG dư địa chắc chắn + chủ động hơn ĐMX IPO thụ động.
 -->
 <html lang="vi">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>MWG vs ĐMX · So sánh đầu tư 12 tháng · 23/05/2026</title>
+<title>MWG vs ĐMX · So sánh đầu tư 12 tháng · 24/05/2026</title>
 <link rel="icon" type="image/svg+xml" href="https://ocbs.com.vn/images/icon-gold.svg"/>
 <link rel="alternate icon" type="image/png" href="https://ocbs.com.vn/images/logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -39,10 +40,22 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
 .vs-price{font-size:13px;font-weight:800;margin-top:2px}.vs-price .small{font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;display:block}
 .vs-mid{display:flex;align-items:center;justify-content:center}.vs-orb{font-family:"Playfair Display",Georgia,serif;font-size:22px;font-weight:900;color:var(--muted);background:var(--page);border:1px solid var(--line);border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center}
 
-/* ---- Verdict banner ---- */
-.verdict{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--green-dark);color:#fff;border-radius:14px;padding:16px 22px;margin-bottom:20px}
-.verdict-badge{font-family:"Playfair Display",Georgia,serif;font-size:30px;font-weight:900;line-height:1;color:var(--orange-light);white-space:nowrap}
-.verdict-txt{font-size:13px;line-height:1.5;font-weight:600;color:#EAF3EC}.verdict-txt strong{color:#fff;font-weight:800}.verdict-txt .hl{color:var(--orange-light);font-weight:800}
+/* ---- Verdict banner (redesigned 25/05) ---- */
+.verdict{display:block;background:linear-gradient(135deg,#052016 0%,#063A22 45%,var(--green-dark) 100%);color:#fff;border-radius:18px;padding:24px 28px 22px;margin-bottom:22px;box-shadow:0 18px 50px -28px rgba(0,40,20,.55);position:relative;overflow:hidden}
+.verdict::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(228,160,37,.16),transparent 70%);pointer-events:none}
+.verdict-kicker{font-size:10px;font-weight:800;letter-spacing:2.6px;color:var(--orange-light);text-transform:uppercase;margin-bottom:10px;position:relative}
+.verdict-headline{font-family:"Playfair Display",Georgia,serif;font-size:30px;font-weight:900;line-height:1.18;color:#fff;margin-bottom:18px;letter-spacing:.2px;position:relative}
+.verdict-headline .vh-em{color:var(--orange-light);font-style:italic;font-weight:900}
+.verdict-grid{display:grid;grid-template-columns:minmax(190px,230px) 1fr;gap:22px;align-items:stretch;position:relative}
+.verdict-stats{display:flex;flex-direction:column;gap:0;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(228,160,37,.28);border-radius:12px;backdrop-filter:blur(2px)}
+.vstat{display:flex;flex-direction:column;gap:3px;padding:9px 0}
+.vstat+.vstat{border-top:1px solid rgba(255,255,255,.09)}
+.vstat-v{font-size:22px;font-weight:800;color:var(--orange-light);line-height:1;letter-spacing:.3px}
+.vstat-k{font-size:10.5px;color:#D7E5DC;font-weight:600;line-height:1.35}
+.verdict-body{display:flex;flex-direction:column;gap:10px;justify-content:center}
+.verdict-body p{font-size:13.5px;line-height:1.6;color:#EAF3EC;font-weight:500;margin:0}
+.verdict-body p strong{color:#fff;font-weight:800}
+.verdict-body p em{font-style:normal;color:var(--orange-light);font-weight:700}
 
 /* ---- Comparison table ---- */
 .section-mini-title{font-size:10px;font-weight:800;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}.section-mini-title::before{content:"";width:24px;height:2px;background:var(--green)}
@@ -97,7 +110,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
 .hist-rule .dmx-map{display:block;margin-top:6px;padding-top:6px;border-top:1px solid var(--soft);font-weight:800}
 .hist-rule .dmx-map.ok{color:var(--green-dark)}.hist-rule .dmx-map.warn{color:var(--orange-dark)}.hist-rule .dmx-map.bad{color:var(--red)}
 
-@media (max-width:720px){body{padding:12px 6px;overflow-x:hidden}.page{width:100%;max-width:100%;padding:22px 18px 18px;border-radius:12px;overflow:hidden}.header{margin-bottom:18px;flex-wrap:wrap;align-items:flex-start}.header-meta{align-items:flex-start}.report-title{font-size:25px}.versus{grid-template-columns:1fr;gap:10px}.vs-mid{display:none}.verdict{grid-template-columns:1fr;gap:8px;text-align:left}.verdict-badge{font-size:25px}.cmp{font-size:10.5px}.cmp th,.cmp td{padding:8px 9px}.cmp td.c-crit{width:26%}.two-col{grid-template-columns:1fr;gap:12px}.dual-grid{grid-template-columns:1fr;gap:10px}.hist-rules{grid-template-columns:1fr}.footer{grid-template-columns:1fr;align-items:start;gap:10px}.footer-contact{text-align:left}.contact-main{justify-content:flex-start;flex-wrap:wrap}.ocbs-logo{height:38px}}
+@media (max-width:720px){body{padding:12px 6px;overflow-x:hidden}.page{width:100%;max-width:100%;padding:22px 18px 18px;border-radius:12px;overflow:hidden}.header{margin-bottom:18px;flex-wrap:wrap;align-items:flex-start}.header-meta{align-items:flex-start}.report-title{font-size:25px}.versus{grid-template-columns:1fr;gap:10px}.vs-mid{display:none}.verdict{padding:20px 20px 18px}.verdict-headline{font-size:23px;margin-bottom:14px}.verdict-grid{grid-template-columns:1fr;gap:14px}.vstat-v{font-size:20px}.cmp{font-size:10.5px}.cmp th,.cmp td{padding:8px 9px}.cmp td.c-crit{width:26%}.two-col{grid-template-columns:1fr;gap:12px}.dual-grid{grid-template-columns:1fr;gap:10px}.hist-rules{grid-template-columns:1fr}.footer{grid-template-columns:1fr;align-items:start;gap:10px}.footer-contact{text-align:left}.contact-main{justify-content:flex-start;flex-wrap:wrap}.ocbs-logo{height:38px}}
 @media print{@page{size:A4 portrait;margin:9mm}body{background:var(--page);padding:0}.page{box-shadow:none;border-radius:0;padding:0;max-width:none}.read-more{color:var(--green)!important;box-shadow:none;text-decoration:none}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
@@ -105,7 +118,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
 <div class="page">
   <div class="header">
     <div class="brand-left"><img class="ocbs-logo" src="https://ocbs.com.vn/images/logo.png" alt="OCBS — Trung Tâm KD HCM02"/><div class="brand-text"><div class="brand-name">Trung Tâm KD HCM02</div><div class="brand-team">Dẫn lối thịnh vượng bền vững</div></div></div>
-    <div class="header-meta"><div class="tier-badge">★ VVIP · SO SÁNH ĐẦU TƯ</div><div class="date-pub">Phát hành 23/05/2026</div></div>
+    <div class="header-meta"><div class="tier-badge">★ VVIP · SO SÁNH ĐẦU TƯ</div><div class="date-pub">Cập nhật 24/05/2026</div></div>
   </div>
 
   <div class="title-strip">
@@ -131,8 +144,19 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
   </div>
 
   <div class="verdict">
-    <div class="verdict-badge">Ưu tiên MWG</div>
-    <div class="verdict-txt">Cho tầm nhìn <strong>12 tháng</strong>: <strong>MWG</strong> cho rủi ro–lợi nhuận cân đối hơn — tổng lợi nhuận kỳ vọng <span class="hl">+26,5%</span> (đã gồm cổ tức), mua ở mức <span class="hl">thấp hơn giá trị từng phần</span> mà chính IPO ĐMX định giá. <strong>ĐMX</strong> chỉ vượt trội nếu bạn ưu tiên cổ tức <span class="hl">~5%</span> + cược pure-play và lấy được suất IPO.</div>
+    <div class="verdict-kicker">★ Khuyến nghị 12 tháng · OCBS HCM02</div>
+    <div class="verdict-headline">MWG <span class="vh-em">— Dư địa chắc chắn &amp; chủ động hơn</span></div>
+    <div class="verdict-grid">
+      <div class="verdict-stats">
+        <div class="vstat"><span class="vstat-v">+26,5%</span><span class="vstat-k">Tổng lợi nhuận base 12T (gồm cổ tức ~2,5%)</span></div>
+        <div class="vstat"><span class="vstat-v">+53,9%</span><span class="vstat-k">Kịch bản bull — IPO ĐMX mở khóa SOTP</span></div>
+        <div class="vstat"><span class="vstat-v">~12%</span><span class="vstat-k">Chiết khấu MWG vs tổng giá trị từng phần</span></div>
+      </div>
+      <div class="verdict-body">
+        <p><strong>MWG</strong> có dư địa tăng giá <em>chắc chắn và định lượng được</em>, mua dưới SOTP, và nhà đầu tư <em>giữ quyền chủ động</em> hoàn toàn: tích lũy, thoát hay nắm giữ bất kỳ lúc nào.</p>
+        <p><strong>ĐMX</strong> có cơ sở thống kê ở giá tham chiếu 80.000đ, nhưng vốn bị kẹt đến T8/2026, suất phân bổ không kiểm soát — là cược <em>thụ động</em>, không phải vị thế chủ động.</p>
+      </div>
+    </div>
   </div>
 
   <div class="section-mini-title">Đối chiếu trực tiếp</div>
@@ -165,19 +189,6 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
     <div class="ret-note">MWG định lượng được cả hai cấu phần; bull = IPO ĐMX thành công + biên gộp tiếp tục mở rộng. ĐMX dẫn về lợi suất cổ tức nhưng phần tăng giá là ẩn số do chưa có lịch sử giao dịch.</div>
   </div>
 
-  <div class="section-mini-title">Nên chọn mã nào — theo mục tiêu của bạn</div>
-  <div class="dual-grid">
-    <div class="dual-box now"><div class="dual-title">▲ Chọn MWG nếu</div><ul class="dual-list">
-      <li><strong>Tổng lợi nhuận có biên an toàn</strong> · +26,5% gồm cổ tức, mua dưới SOTP.</li>
-      <li><strong>Cần thanh khoản</strong> · mua/bán ngay, ADTV ~6 triệu CP/phiên.</li>
-      <li><strong>Muốn quyền chọn miễn phí</strong> · kèm BHX + tiền ròng 18.284 tỷ đệm rủi ro.</li>
-    </ul></div>
-    <div class="dual-box pause"><div class="dual-title">▲ Chọn ĐMX nếu</div><ul class="dual-list">
-      <li><strong>Ưu tiên cổ tức</strong> · lợi suất dự kiến ~5%, gấp đôi MWG.</li>
-      <li><strong>Muốn cược pure-play</strong> · ICT-CE thuần, không pha loãng bởi BHX.</li>
-      <li><strong>Tin sóng VN30</strong> · lấy được suất IPO + chịu được biến động đầu sàn.</li>
-    </ul></div>
-  </div>
 
   <!-- ============================================================= -->
   <!-- BÀI HỌC LỊCH SỬ v2 (audit 2026-05-24) — replace MSR→TCX, giá adjusted -->
@@ -230,12 +241,12 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
     background:var(--g);color:#fff;font-weight:800;font-size:12px;margin-right:7px}
   .psl .rule h4{display:flex;align-items:center;font-size:13px;margin:0 0 6px;font-weight:800}
   .psl .rule p{margin:0;font-size:12px;color:#34423b}
-  .psl .verdict{border:2px solid var(--g);border-radius:14px;padding:18px 20px;margin:20px 0 8px;background:#fff;box-shadow:0 6px 24px rgba(10,138,79,.08)}
+  .psl .verdict{display:block;border:2px solid var(--g);border-radius:14px;padding:18px 20px;margin:20px 0 8px;background:#fff;box-shadow:0 6px 24px rgba(10,138,79,.08);color:var(--ink)}
   .psl .verdict h3{margin:0 0 12px;color:var(--g2);font-size:18px}
   .psl .vrow{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
   .psl .vrow:first-of-type{border-top:none}
-  .psl .vbadge{flex:0 0 auto;font-size:11px;font-weight:800;padding:4px 10px;border-radius:7px;white-space:nowrap;margin-top:2px}
-  .psl .b-ok{background:#e7f5ee;color:var(--g2)}.psl .b-no{background:#fde9e7;color:var(--dn)}.psl .b-shift{background:#fff7e6;color:#9a6a12}
+  .psl .vbadge{flex:0 0 auto;font-size:11px;font-weight:800;padding:4px 10px;border-radius:7px;white-space:normal;max-width:160px;line-height:1.35;margin-top:2px}
+  .psl .b-ok{background:#e7f5ee;color:var(--g2)}.psl .b-no{background:#fde9e7;color:var(--dn)}.psl .b-shift{background:#fff7e6;color:#9a6a12}.psl .b-pref{background:#063a22;color:#eafff4}
   .psl .vrow div p{margin:0;font-size:12.5px}.psl .vrow div b{font-size:13px}
   .psl .note{font-size:11.5px;color:var(--mut);margin-top:6px}
   .psl .src{font-size:11px;color:var(--mut);margin-top:18px;border-top:1px solid var(--line);padding-top:10px}
@@ -244,7 +255,6 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
 
   <span class="eyebrow">Phân tích định lượng · 5 tiền lệ · 2015–2025</span>
   <h2>Lịch sử "mẹ niêm yết con" nói gì về việc <span>mua ĐMX khi IPO?</span></h2>
-  <p class="lead">Trước ĐMX, TTCK Việt Nam đã có ít nhất 5 lần một tập đoàn đưa công ty con lên sàn. Chúng tôi đo biến động giá <b>cả con lẫn mẹ</b> sau 1 / 3 / 6 tháng — <b>tính từ giá tham chiếu</b> — đối chiếu VNINDEX cùng kỳ, cộng định giá P/E–P/B lúc niêm yết, thêm hành vi MẸ 90 ngày trước IPO con, rồi soi ĐMX vào đúng khung đó.</p>
   <div class="meth">
     <b>Cách đọc số:</b> % thay đổi của <b>CON tính từ giá tham chiếu phiên đầu</b> (đã gộp cú bật phiên 1); <b>MẸ &amp; VNINDEX tính từ giá tham chiếu phiên T0</b>. Giá đã quy về <b>adjusted</b> (chia bù chia tách/cổ tức về SLCP hiện tại). <b>Alpha = suất sinh lời − VNINDEX cùng kỳ</b>.
   </div>
@@ -301,10 +311,10 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
 
   <div class="callout">
     <b>Bốn điều rút ra:</b><br>
-    ① <b>HOSE + giá chào bán → thắng thị trường 4/4:</b> FRT, VRE, VHM, TCX mua tại giá tham chiếu đều cho alpha 6m dương <b>(+0,7 đến +15,0)</b>; chỉ MCH (UPCoM) âm nặng −43,8.<br>
-    ② <b>Đuổi giá sau cú bật phiên 1 trên HOSE = bẫy:</b> mua tại close phiên đầu (sau trần +20%) khiến lợi suất 6m giảm <b>~16,7 điểm %</b>. TCX bật chỉ +4,6% nên mất ít hơn (+11,2 → +6,3).<br>
-    ③ <b>TCX khác cấu trúc 4 cặp cũ:</b> bật phiên 1 chỉ +4,6% — thị trường định giá thận trọng cho mảng CK, không FOMO. Alpha 6m CON chỉ +0,7 (không vượt được TTCK hồi phục).<br>
-    ④ <b>TCB và MSN giống nhau:</b> mẹ bị áp lực sau IPO con (α −24 / −16); hoàn toàn khác VIC sau VRE (α +81).
+    ① <b>HOSE + giá tham chiếu → thắng TT 4/4</b> (α+0,7 đến +15); MCH (UPCoM) âm nặng −43,8.<br>
+    ② <b>Đuổi giá sau bật phiên 1 = bẫy</b> — lợi suất 6m kém đi ~16,7 điểm %; TCX bật nhẹ (+4,6%) nên thiệt ít hơn.<br>
+    ③ <b>TCX định giá thận trọng</b> — không FOMO như VRE/VHM; alpha 6m CON chỉ +0,7, không vượt được TT.<br>
+    ④ <b>Mẹ bùng nổ chỉ khi IPO con mở khóa NAV ẩn</b> (VIC→VRE α+81); con đã consolidated thì mẹ bị áp lực (TCB α−24, MSN α−16).
   </div>
 
   <h3>2 · Định giá P/E – P/B của CON tại ngày niêm yết</h3>
@@ -338,33 +348,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
   </div>
   <p class="note">Chỉ <b>VIC</b> có hiện tượng front-run rõ rệt (+27 đến +46 alpha trong 90 ngày trước IPO con). FPT/MSN/TCB không front-run.</p>
 
-  <h3>4 · So sánh định giá MẸ ↔ CON cho chính cặp MWG – ĐMX</h3>
-  <div class="vs">
-    <div class="col parent">
-      <div class="role">Công ty MẸ — toàn bộ hệ sinh thái</div>
-      <div class="nm">MWG</div>
-      <div class="mrow"><span>Giá (22/05/2026 14:45)</span><b>79.400 đ</b></div>
-      <div class="mrow"><span>P/E (EPS TTM 5.561)</span><b>~14,3x <span style="font-size:10px;font-weight:600;color:#FFD56B">· pct 4%</span></b></div>
-      <div class="mrow" style="font-size:11px;opacity:.9"><span style="opacity:.7">Đọc P/E pct 4%</span><span style="text-align:right;max-width:60%">cực thấp trong lịch sử 2021–2026; phản ánh giai đoạn lợi nhuận phục hồi mạnh sau đáy 2022–2023</span></div>
-      <div class="mrow"><span>P/B (BVPS 21.214)</span><b>~3,7x</b></div>
-      <div class="mrow"><span>Vốn hóa</span><b>~114.000 tỷ</b></div>
-      <div class="mrow"><span>Bao gồm</span><b>ĐMX + Bách Hóa Xanh + Erablue</b></div>
-    </div>
-    <div class="col child">
-      <div class="role">Công ty CON — chỉ một mảng (IPO)</div>
-      <div class="nm" style="color:var(--g)">ĐMX</div>
-      <div class="mrow"><span>Giá chào bán</span><b>80.000 đ</b></div>
-      <div class="mrow"><span>P/E (LNST 2025 ~5,8 nghìn tỷ)</span><b style="color:var(--dn)">~17x</b></div>
-      <div class="mrow"><span>P/B trước IPO (BVPS 16.163)</span><b style="color:var(--dn)">~5,0x</b></div>
-      <div class="mrow"><span>P/B sau IPO (BVPS ~25.110)</span><b>~3,2x</b></div>
-      <div class="mrow"><span>Cổ tức 2026</span><b style="color:var(--g)">5% (4.000đ)</b></div>
-    </div>
-  </div>
-  <div class="callout">
-    <b>Đọc đúng định giá ĐMX:</b> Trên <b>P/E, ĐMX (~17x) đắt hơn chính mẹ MWG (~14,3x) ~19%</b> — mua con bị tính giá cao hơn mua cả tập đoàn (vốn đã gồm ĐMX <i>cộng</i> Bách Hóa Xanh + Erablue). Trên <b>P/B</b>, sổ sách trước IPO 5,0x trông cao (do ĐMX vừa chia 38.445 tỷ cổ tức về mẹ làm mỏng vốn chủ), <b>sau IPO rơi về ~3,2x</b> nhờ bơm 14.360 tỷ vốn mới — thấp hơn MWG 3,7x.
-  </div>
-
-  <h3>5 · Bốn quy luật rút ra</h3>
+  <h3>4 · Bốn quy luật rút ra</h3>
   <div class="rules">
     <div class="rule"><h4><span class="n">1</span>HOSE + giá chào bán → thắng thị trường 4/4</h4>
       <p>FRT, VRE, VHM, <b>TCX</b> mua ở giá tham chiếu đều có alpha 6m dương <b>(+0,7…+15,0)</b>. MCH (UPCoM) âm nặng <b>−43,8</b> → <b>sàn niêm yết &amp; chất lượng định giá quan trọng.</b></p></div>
@@ -377,18 +361,22 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
   </div>
 
   <div class="verdict">
-  <h3>Kết luận: Có nên đầu tư vào IPO ĐMX?</h3>
+  <h3>Kết luận: ĐMX hay MWG — phân tích từ tiền lệ lịch sử</h3>
   <div class="vrow">
-    <span class="vbadge b-ok">CÓ — Ở GIÁ IPO</span>
-    <div><p><b>Mua TẠI giá chào bán 80.000đ là có cơ sở thống kê.</b> 4/4 IPO HOSE mua ở giá tham chiếu thắng VNINDEX 6m (α +0,7 đến +15,0); ĐMX cũng lên HOSE; P/E ~17x không phải bong bóng; cổ tức 5% làm đệm.</p></div>
+    <span class="vbadge b-shift">ĐMX — CÓ CƠ SỞ (NẾU LẤY ĐƯỢC GIÁ IPO)</span>
+    <div><p><b>Có cơ sở thống kê nếu mua đúng giá tham chiếu 80.000đ.</b> 4/4 IPO HOSE ở giá tham chiếu thắng VNINDEX 6m (α +0,7 đến +15,0); P/E ~17x không phải bong bóng; cổ tức 5% làm đệm. Tuy nhiên: nhà đầu tư <b>không chủ động</b> được số lượng phân bổ thực nhận — đây là cược <b>thụ động</b>.</p></div>
   </div>
   <div class="vrow">
     <span class="vbadge b-no">KHÔNG MUA ĐUỔI</span>
-    <div><p>Nếu ĐMX trần lên ~96.000đ, đó là chỗ để bán, không phải để mua.</p></div>
+    <div><p>Nếu ĐMX trần lên ~96.000đ phiên đầu, đó là chỗ để bán, không phải để mua thêm.</p></div>
   </div>
   <div class="vrow">
-    <span class="vbadge b-shift">CHÚ Ý</span>
-    <div><p><b>MWG đang underperform VNINDEX 14–17 điểm % suốt 90–180 ngày qua.</b> Thị trường có thể chưa định giá đầy đủ việc MWG niêm yết ĐMX cùng với BHX đang mở rộng nhanh trong bối cảnh VN-Index suy giảm giai đoạn vừa qua.</p></div>
+    <span class="vbadge b-pref">MWG — DƯ ĐỊA CHẮC CHẮN &amp; CHỦ ĐỘNG HƠN</span>
+    <div><p><b>Dài hạn, MWG ưu việt hơn vì nhà đầu tư giữ quyền chủ động hoàn toàn:</b> cùng tiếp cận ĐMX qua 85% cổ phần + thêm Bách Hóa Xanh đang mở rộng + tiền ròng 18.284 tỷ làm đệm. Có thể tích lũy/thoát bất kỳ lúc nào, không bị kẹt vốn. Total return +26,5% (base) đến +53,9% (bull) định lượng được. Đây là vị thế <b>chủ động với biên an toàn</b>, không phải cược thống kê thụ động.</p></div>
+  </div>
+  <div class="vrow">
+    <span class="vbadge b-shift">CHÚ Ý — SOTP CHƯA ĐƯỢC ĐỊNH GIÁ ĐẦY ĐỦ</span>
+    <div><p><b>MWG đang underperform VNINDEX 14–17 điểm % suốt 90–180 ngày qua.</b> Thị trường có thể chưa định giá đầy đủ sự kiện niêm yết ĐMX — đây là xúc tác SOTP chính sẽ được "mở khóa" sau T8/2026, với giá mục tiêu neo 98.400đ (base) và 120.200đ (bull).</p></div>
   </div>
   </div>
 
@@ -400,7 +388,7 @@ body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-se
     <div class="footer-links"><a href="https://nctffi-cell.github.io/bao-cao-cophieu/vvip/" class="read-more">Dossier MWG đầy đủ</a><a href="https://nctffi-cell.github.io/bao-cao-cophieu/onepager/" class="read-more">One-pager MWG</a></div>
     <div class="footer-contact"><div class="contact-main"><strong>TT KD HCM02, OCBS</strong><span class="phone-line">0935.350.356</span></div><div class="contact-meta">The Hallmark, TP.HCM · ocbs.com.vn · sieucophieu.vn</div></div>
   </div>
-  <div class="disclaimer-mini">Quan điểm độc lập của Trung Tâm Kinh Doanh HCM02, OCBS; không đại diện Phòng Phân tích chính thức. Định giá MWG nguồn nội bộ (data/MWG_valuation.json, SOTP neo giá IPO); số liệu ĐMX theo hồ sơ IPO được UBCKNN chấp thuận 22/05/2026 + dự phóng Vietcap (P/E 2026F ~10×, lợi suất cổ tức ~5%). Giá chào bán 80.000 đ là dự kiến, chưa chốt cuối. Phần "Bài học lịch sử" (audit v2 2026-05-24) dựng từ giá adjusted FireAnt + cafef realtime; 5 cặp gồm FRT/VRE/VHM/TCX/MCH thuộc 4 tập đoàn FPT/VIC/TCB/MSN — khung định tính, không phải xác suất thống kê. Tài liệu chỉ mang tính tham khảo, không phải khuyến nghị mua/bán. © 2026 OCBS.</div>
+  <div class="disclaimer-mini">Quan điểm độc lập của Trung Tâm Kinh Doanh HCM02, OCBS; không đại diện Phòng Phân tích chính thức. Cập nhật 24/05/2026: nhấn mạnh MWG có dư địa chắc chắn &amp; chủ động hơn ĐMX IPO thụ động. Định giá MWG nguồn nội bộ (data/MWG_valuation.json, SOTP neo giá IPO); số liệu ĐMX theo hồ sơ IPO được UBCKNN chấp thuận 22/05/2026 + dự phóng Vietcap (P/E 2026F ~10×, lợi suất cổ tức ~5%). Giá chào bán 80.000 đ là dự kiến, chưa chốt cuối. Phần "Bài học lịch sử" (audit v2 2026-05-24) dựng từ giá adjusted FireAnt + cafef realtime; 5 cặp gồm FRT/VRE/VHM/TCX/MCH — khung định tính, không phải xác suất thống kê. Tài liệu chỉ mang tính tham khảo, không phải khuyến nghị mua/bán. © 2026 OCBS.</div>
 </div>
 </body>
 </html>
